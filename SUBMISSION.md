@@ -1,6 +1,6 @@
-# Second Look: PayPal AI Hackathon submission draft
+# Second Look: PayPal AI Hackathon submission
 
-Prepared for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/). The submission deadline is **November 12, 2026, at 12:00 noon PST** (America/Los_Angeles). The source and captioned demo are published. The existing Devpost entry remains a draft awaiting truthful personal answers and final terms/submission confirmation.
+Prepared for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/). The submission deadline is **November 12, 2026, at 12:00 noon PST** (America/Los_Angeles). The source and captioned demo are published. [Second Look](https://devpost.com/software/second-look-x5nt6q) was submitted after the user completed personal attestations and explicitly approved the final rules/terms agreement and submission.
 
 ## Project description
 
@@ -38,7 +38,7 @@ The application uses PayPal Orders v2 sandbox APIs for server-side create/get/ca
 
 Judges can run it locally using the fresh-machine instructions in README.md: install Node 24.2+, install Ollama and obtain the exact local model on their own new machine, then start the loopback app. For payment testing, judges use their own free Sandbox Business application and generated Sandbox Personal buyer. Sandbox app credentials stay in a protected, ignored local `.env`; no shared merchant secret is published. A regular PayPal login is used only for Developer Dashboard access, while checkout uses the generated fictitious sandbox buyer login and test funds. LICENSE and NOTICES.md preserve the project and external component licensing.
 
-## Materials and human review still required
+## Published materials and judge access
 
 The [official challenge requirements](https://paypalaihackathon.devpost.com/) require a public GitHub/GitLab/Bitbucket repository with runnable source, assets, instructions and a visible open-source license, plus a working demo video **under three minutes, publicly visible on YouTube**. Complete local setup instructions can satisfy functional demo access without public hosting.
 
@@ -46,6 +46,6 @@ The [official challenge requirements](https://paypalaihackathon.devpost.com/) re
 - Local working demo: [65-second captioned WebM](artifacts/demo/second-look-demo.webm), with [captions](artifacts/demo/second-look-demo.vtt) and [recording evidence](artifacts/demo/demo-evidence.json). It shows actual live review, acknowledgement, sandbox order/capture and receipt reload. Four takes are edited together; PayPal's account/approval screen is excluded and its separate approval is explained in the captions. No audio is required to follow it.
 - Public YouTube demo: [Second Look sandbox demo](https://www.youtube.com/watch?v=znVLaGqigrw), 65 seconds with visible captions.
 - Judge access: complete and verify the documented setup, available free of charge through **December 15, 2026, at 8:00 a.m. Pacific**, when judging ends.
-- Human review: confirm eligibility, project ownership/licensing, and development during the submission period; explain significant updates if any part predates it. Review the [official rules](https://paypalaihackathon.devpost.com/rules) before accepting terms, registering or submitting. Final eligibility and terms/submission confirmation remain pending.
+- Human review: confirm eligibility, project ownership/licensing, and development during the submission period; explain significant updates if any part predates it. Review the [official rules](https://paypalaihackathon.devpost.com/rules) before accepting terms, registering or submitting. The user completed the required personal attestations and explicitly approved the final rules/terms agreement and submission.
 
-Sandbox tests, local recording, captions, source packaging and the submission narrative are prepared. Source and video publication are complete; continued judge access and human eligibility/terms/submission review remain necessary. Retrieval limitations remain disclosed; this draft makes no blanket hackathon-readiness claim.
+Sandbox tests, local recording, captions, source packaging and the submission narrative are prepared. Source and video publication and final submission are complete. [Submitted project](https://devpost.com/software/second-look-x5nt6q). Keep the public source and demo freely accessible throughout judging. Retrieval limitations remain disclosed; this draft makes no blanket hackathon-readiness claim.
