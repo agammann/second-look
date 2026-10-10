@@ -1,0 +1,12 @@
+{
+  "startedAt": "2026-10-10T00:34:04.411Z",
+  "kind": "Actual loopback HTTP smoke; no mocked transport, no PayPal or model call",
+  "pass": true,
+  "checks": [
+    "failed listener releases SQLite and permits owned cleanup",
+    "config",
+    "six listings",
+    "HTML loads"
+  ],
+  "finishedAt": "2026-10-10T00:34:04.499Z"
+}

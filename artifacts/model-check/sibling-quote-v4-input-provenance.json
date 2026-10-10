@@ -1,0 +1,35 @@
+{
+  "kind": "Sibling-authored held-out quote-retrieval inputs, informed by prior failures; no naive external independence claim",
+  "recordedAt": "2026-10-10T02:39:26.489Z",
+  "datasetPath": "tests/fixtures/sibling-holdout-quote-v4.json",
+  "rawSha256": "4ba5a2b17a554a4bff8b769482c77299c7259ba1952cc0a52d258571a89a16ec",
+  "canonicalInputSha256": "3b2c5bebefcb23a990979732e530615aef7d405577dd4787bf42fb3642e9c703",
+  "caseCount": 8,
+  "requirementCount": 12,
+  "freeze": {
+    "frozenAt": "2026-10-10T02:37:56.621Z",
+    "moduleSha256": "77a7c8d011b40a162fbff34472f6ed5cceb19b57612c2f5dee98e79742b20c42",
+    "promptSha256": "c7ad604f29f07a66e56ace0a1c5d9ff4d2cbff4d2aabc2314e1139818de2e43a",
+    "schemaSha256": "f2c2a89da8fdf32eaa0115e5acf0765d66f89f05e8dd13c7efcb5761b81b2e5c"
+  },
+  "authoring": {
+    "author": "/root/integration_audit",
+    "authoringContext": "One sibling auditor with prior v1/v2/v3 failure knowledge. Distinct ordinary-goods inputs authored before v4 freeze and before v4 results. This is a private held-out sibling sample, not naive external independence, an accuracy estimate, or gold available to the model.",
+    "policy": "Inputs and human criteria remain private until frozen v4 source/prompt/schema; evaluate once. Essential quotes are human context guides, not exact-ID success rules. No verdict scoring.",
+    "metadataRecordedAt": "2026-10-10 02:38:10 UTC",
+    "authoringCommitment": "All eight exact cases and human criteria were committed to private context storage before the auditor's prepared-count message and before the parent's v4 freeze announcement. No model outputs were seen while authoring. Metadata clock was recorded afterward and is not an exact authoring timestamp.",
+    "parentFreezeTimestampBeforeReveal": "2026-10-10T02:37:56.621Z"
+  },
+  "mappingPolicy": "Exact full listing and requirements only enter model input. Essential quotes, question examples, pitfalls and humanCriteria are evaluation-only. All cases/rows retained; no requirement verdict or exact-only semantic score. Frozen source will be evaluated once.",
+  "dimensions": [
+    "compound aspects and concessions",
+    "multi-requirement association",
+    "exclusions and different-item scope",
+    "mixed variants",
+    "dated correction",
+    "explicit uncertainty",
+    "unknown facts and useful empty selection",
+    "malicious instruction with independent factual paragraphs"
+  ],
+  "metadataNote": "Before dataset handoff, clarified that the parent freeze timestamp is not an exact reveal timestamp; all case inputs and criteria unchanged."
+}

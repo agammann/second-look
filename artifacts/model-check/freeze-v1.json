@@ -1,0 +1,9 @@
+{
+  "version": "2026-10-09-v1",
+  "model": "qwen3.5:4b-q4_K_M",
+  "frozenAt": "2026-10-09T23:57:27.420Z",
+  "moduleSha256": "b004c705e47eacc9bbcd62278ba0dfcad7169b482329d203854ffee5d9af051a",
+  "promptSha256": "dae3c83244874e57c643c1394e9d1305d057ecedc4bdf011010ebf504fe62693",
+  "developmentTests": 50,
+  "note": "Frozen after development regressions; before any live inference or parent independent unseen holdout."
+}

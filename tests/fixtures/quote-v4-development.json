@@ -1,0 +1,30 @@
+{
+  "dataset": "quote-v4-development",
+  "provenance": "Author-written development examples after v3 evaluation exposure. Different subjects and buyer facts; neither fresh independent evidence nor semantic unit-test accuracy.",
+  "cases": [
+    {
+      "id": "dev-q4-01",
+      "requirements": ["A four-string instrument with a maple neck, case, spare strings and strap, with every latch closing"],
+      "description": "The instrument has four strings. Its neck is maple. A fitted case is supplied. Spare strings are packed inside. The strap is included. All case latches close. The finish is green.",
+      "criteria": {"essentialQuotes": ["The instrument has four strings.", "Its neck is maple.", "A fitted case is supplied.", "Spare strings are packed inside.", "The strap is included.", "All case latches close."], "acceptableQuestion": null, "acceptableQuestions": [], "pitfall": "Do not replace required aspects with an unrelated appearance sentence; six exact distinct spans can be needed."}
+    },
+    {
+      "id": "dev-q4-02",
+      "requirements": ["A fountain pen with a gold nib", "Its converter capacity must be stated"],
+      "description": "Fountain pen from a private collection. Elegant appearance. Please contact me for more photographs.",
+      "criteria": {"essentialQuotes": [], "acceptableQuestion": null, "acceptableQuestions": [], "pitfall": "Item identity, appearance and contact offers do not state either requested fact; no relevant selection, clarification may help."}
+    },
+    {
+      "id": "dev-q4-03",
+      "requirements": ["The narrow tray with silicone handles"],
+      "description": "The narrow tray has wooden handles. The wide tray has silicone handles. Both trays have raised edges.",
+      "criteria": {"essentialQuotes": ["The narrow tray has wooden handles.", "The wide tray has silicone handles."], "acceptableQuestion": null, "acceptableQuestions": [], "pitfall": "Keep named variants attached to their features; do not combine them or request scope clarification merely because names are already clear."}
+    },
+    {
+      "id": "dev-q4-04",
+      "requirements": ["A sealed jar with a contents list"],
+      "description": "Earlier note: the jar is sealed. New note: I opened the jar yesterday. The contents list is missing. The lid still screws on.",
+      "criteria": {"essentialQuotes": ["Earlier note: the jar is sealed.", "New note: I opened the jar yesterday.", "The contents list is missing."], "acceptableQuestion": null, "acceptableQuestions": [], "pitfall": "Keep update and missing information visible; lid operation is not evidence that the seal remains intact."}
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": "2026-10-10-v2",
+  "model": "qwen3.5:4b-q4_K_M",
+  "frozenAt": "2026-10-10T00:41:03.744Z",
+  "moduleSha256": "d2ad00dc76479635e6ec9b7e39a80bbcee346fa1145da433de07d5b9f33d10e9",
+  "validatorSha256": "d2ad00dc76479635e6ec9b7e39a80bbcee346fa1145da433de07d5b9f33d10e9",
+  "promptSha256": "56451c8583a148690e9731c027eab3e48e10f3972118a767e7bea2679028eec6",
+  "schemaSha256": "fb03d65f0230bef9cb0fc23eff6bcc4bd6a726808025a06e3f80817447826b6a",
+  "requestSchemaSha256": [
+    {
+      "requirements": 1,
+      "sha256": "8ba22af9110f3a3d9f9b318c1982a51f84f67556f2d91785b8fe948d93824870"
+    },
+    {
+      "requirements": 2,
+      "sha256": "f712b5ca15db43e6fa14f9cef79c5e63399762ffbb318848b26490d329f85b52"
+    },
+    {
+      "requirements": 3,
+      "sha256": "1d91f467a31016888f53b7ea2d2ac1dc7f4d8d6c36a14ffaaf7e0dc181118596"
+    }
+  ],
+  "mockedTests": {
+    "currentV2": 22,
+    "preservedHistoricalV1": 50,
+    "runnerControlFlow": 3
+  },
+  "note": "Frozen after general source-audit and development regressions, before any v2 model request or exposure to the new parent independent set. V1 source, original input fixture and first raw reports remain preserved.",
+  "policy": "Unknown may retain exact eligible relevant context; valid means quote integrity only. Unsupported known proposals remain visible as withheld conclusions. Instruction-governed spans and general decision claims are excluded with a bounded notice. Conservative bounded English guards are not a semantic proof or authentication."
+}

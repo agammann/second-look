@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "kind": "Edited recording of actual Second Look browser interactions",
+  "file": "second-look-demo.webm",
+  "sha256": "41c27d28231be24666f9a8e5bb24af97957fa50522e1556de3f28fd747477136",
+  "bytes": 9270109,
+  "durationSeconds": 65,
+  "frames": 1560,
+  "fps": 24,
+  "dimensions": {
+    "width": 1280,
+    "height": 852
+  },
+  "codec": "VP8",
+  "container": "WebM",
+  "captioned": true,
+  "audio": false,
+  "content": "Live normal-app Qwen review, buyer acknowledgement, actual sandbox order creation, explicit capture and persisted completed receipt. Fictitious PayPal approval occurred between takes and is explained in captions.",
+  "sandboxCapture": {
+    "localOrder": "0c2a375d-538b-4e39-a353-6d0ee89926a8",
+    "providerOrder": "49U648333H469783B",
+    "captureId": "5X082583SJ2101505",
+    "amountCents": 4800,
+    "currency": "USD",
+    "listingVersion": 1
+  },
+  "sourceFootage": {
+    "sha256": "e7fd5aeed0ff449445e30f738b305c4738a62eee2e8d54728a950d5af07bd57e",
+    "realCapturedFramesRetained": 83,
+    "editedTakes": 4,
+    "timing": "real protocol timestamps sampled at 24 fps; static periods hold captured pixels; no interpolated motion",
+    "segments": [
+      {
+        "name": "review-live-take-02",
+        "manifestSha256": "c337dd53d88afebc067286ba1c453288557cadeb7f32eda5a710a7588cc8efb4",
+        "sourceStatus": "complete",
+        "sourceErrors": [],
+        "sourceFrames": 32,
+        "selectedDurationMs": 14176.4208984375,
+        "selection": "complete_take",
+        "trim": null
+      },
+      {
+        "name": "review-decision-order-take-02",
+        "manifestSha256": "701cb97511a3fa7b496bd39d76c7b80d8bdd0a79b28fe9a262c448ff18f5459e",
+        "sourceStatus": "complete",
+        "sourceErrors": [],
+        "sourceFrames": 22,
+        "selectedDurationMs": 21384.26904296875,
+        "selection": "complete_take",
+        "trim": null
+      },
+      {
+        "name": "approved-capture-receipt-take-01",
+        "manifestSha256": "050bc96ac408e4b3a7cc9171480ffe426d21217d66c524ff8268a0cf9193e687",
+        "sourceStatus": "failed",
+        "sourceErrors": [
+          "UI_FLOW_FAILED"
+        ],
+        "sourceFrames": 22,
+        "selectedDurationMs": 17000,
+        "selection": "explicit_partial_ui_flow_take",
+        "trim": {
+          "startMs": 0,
+          "endMs": 17000,
+          "excludeFromFrame": "frame-000019.jpg",
+          "reason": "Retain the actual capture and completed receipt; exclude the final reload interval whose immediate UI assertion ran during loading."
+        }
+      },
+      {
+        "name": "completed-receipt-persistence-take-01",
+        "manifestSha256": "352880ae9f43780118848f6decb2a7611e08d9d113c54a7ed2cbe06d31262219",
+        "sourceStatus": "complete",
+        "sourceErrors": [],
+        "sourceFrames": 10,
+        "selectedDurationMs": 12342.743896484375,
+        "selection": "complete_take",
+        "trim": null
+      }
+    ],
+    "cuts": [
+      {
+        "after": "review-live-take-02",
+        "before": "review-decision-order-take-02",
+        "reason": "separate_take",
+        "description": "The actual returned quote suggestions and unchanged full listing were read and checked between takes before saving the delegated sandbox test decision."
+      },
+      {
+        "after": "review-decision-order-take-02",
+        "before": "approved-capture-receipt-take-01",
+        "reason": "sandbox_buyer_sign_in",
+        "description": "PayPal approval was completed with the already signed-in fictitious buyer between takes. The provider account screen is excluded. The next take verifies APPROVED with no capture, then requests capture explicitly."
+      },
+      {
+        "after": "approved-capture-receipt-take-01",
+        "before": "completed-receipt-persistence-take-01",
+        "reason": "separate_take",
+        "description": "The first take's final immediate reload assertion ran during loading. Its unverified interval is trimmed; the final separate take shows a fresh reload and verifies the same completed receipt."
+      }
+    ],
+    "sourceFullDecodeFrames": 1560,
+    "rawPrivateRecordingFilesBundled": false
+  },
+  "captions": {
+    "file": "second-look-demo.vtt",
+    "sha256": "d72fddf3344615c28745586479153886ee5ba5fa45dc2a9613e2b04a034c6374",
+    "language": "en",
+    "visibleBelowOriginalUi": true,
+    "barHeight": 132,
+    "fontPixels": 28,
+    "cues": 8,
+    "originalUiFramesCompared": 1560,
+    "originalUiUnchangedBeforeEncoding": true,
+    "pixelComparisonScope": "Every composed1280x720 UI crop is byte-identical to its decoded input RGB before lossy JPEG/VP8 encoding; captions occupy only appended rows720..851.",
+    "encodingBridge": "Pillow quality100, subsampling0 JPEG image2pipe; installed FFmpeg cannot decode PNG input"
+  },
+  "visualInspection": {
+    "passed": true,
+    "method": "All 83 retained source frames reviewed in contact sheets with critical receipt frames inspected at full size; full original video decoded successfully. All eight final caption cue midpoints and final frame decoded and visually inspected.",
+    "captionSamplesReviewed": 9,
+    "credentialOrUnrelatedScreenVisible": false,
+    "captionTextLegible": true,
+    "originalUiUncovered": true
+  },
+  "limitations": [
+    "Four recorded takes with explicit cuts; this is not one uninterrupted end-to-end recording.",
+    "Provider account/sign-in/approval screen is excluded; separate buyer approval was performed on PayPal sandbox and provider approval checked before capture.",
+    "A failed final immediate reload assertion was trimmed from one actual capture take, with original failed metadata retained; a separate final take verifies reload persistence.",
+    "These interactive examples are not a new model-quality evaluation or proof of general retrieval/payment reliability."
+  ],
+  "publication": {
+    "publicYouTubeUrl": null,
+    "uploaded": false
+  }
+}

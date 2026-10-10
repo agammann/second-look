@@ -1,0 +1,257 @@
+{
+  "startedAt": "2026-10-10T01:41:07.749Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "listing retains seller statement disclaimer and server-owned price",
+      "pass": true
+    },
+    {
+      "name": "loading disables repeated review submission",
+      "pass": true
+    },
+    {
+      "name": "repeated click produced one review request",
+      "pass": true
+    },
+    {
+      "name": "requirements remain beside unverified suggested quotes and full saved seller context",
+      "pass": true
+    },
+    {
+      "name": "explicit acknowledgement required before review confirmation",
+      "pass": true
+    },
+    {
+      "name": "editing an unconfirmed draft disables an enabled buyer confirmation",
+      "pass": true
+    },
+    {
+      "name": "confirmation restores keyboard focus to its heading",
+      "pass": true
+    },
+    {
+      "name": "sandbox checkout is visibly disabled without configuration",
+      "pass": true
+    },
+    {
+      "name": "review persists after refresh",
+      "pass": true
+    },
+    {
+      "name": "editing requirements requires a new review before further approval",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "merchant edit visibly invalidates reviewed version",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Saved version 1'\n- 'Listing version 1'\n"
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-41-07-749Z-MOCK\\MOCK-01-catalogue-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-41-07-749Z-MOCK\\MOCK-02-requirements-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-41-07-749Z-MOCK\\MOCK-03-evidence-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-41-07-749Z-MOCK\\MOCK-04-evidence-mobile.png"
+  ],
+  "screenshotStates": [
+    {
+      "file": "MOCK-01-catalogue-desktop.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-02-requirements-desktop.png",
+      "focus": "requirement-3",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-03-evidence-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-04-evidence-mobile.png",
+      "focus": "requirement-1",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    }
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> suggested seller quotes and neutral questions -> saved full seller context -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review -> fresh review and approval",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/mock-review-1/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/merchant/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    }
+  ],
+  "artifactDirectory": "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-41-07-749Z-MOCK",
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4322",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "review": {
+    "id": "mock-review-1",
+    "version": 1,
+    "model": "MOCK UI FIXTURE - no model call",
+    "evidenceVersion": "MOCK-quote-first-v3",
+    "durationMs": 0,
+    "results": [
+      {
+        "requirement": "original edition",
+        "suggestions": [
+          {
+            "spanId": "s1",
+            "quote": "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      },
+      {
+        "requirement": "all four antenna pieces",
+        "suggestions": [
+          {
+            "spanId": "s3",
+            "quote": "All four interchangeable antenna pieces are present."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      },
+      {
+        "requirement": "manufacturer warranty",
+        "suggestions": [],
+        "questions": [
+          {
+            "id": "q_clarify",
+            "text": "What would you like the merchant to clarify about this requirement?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      }
+    ]
+  },
+  "merchantEdited": {
+    "version": 2,
+    "priceCents": 4900,
+    "currency": "USD"
+  },
+  "staleReview": {
+    "id": "mock-review-1",
+    "version": 1,
+    "priceCents": 4800,
+    "stale": true
+  },
+  "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Saved version 1'\n- 'Listing version 1'\n",
+  "finishedAt": "2026-10-10T01:41:09.409Z"
+}

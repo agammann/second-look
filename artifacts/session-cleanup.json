@@ -1,0 +1,26 @@
+{
+  "recordedAt": "2026-10-10T00:49:12.1841302Z",
+  "ownedApp": {
+    "sessionId": 92238,
+    "mechanism": "Ctrl-C sent only to owned exec session; session exit confirmed",
+    "stopped": true,
+    "origin": "http://127.0.0.1:4310"
+  },
+  "ownedOllama": {
+    "sessionId": 89291,
+    "mechanism": "Ctrl-C sent only to owned exec session after final model unload; session exit confirmed",
+    "stopped": true,
+    "origin": "http://127.0.0.1:11434"
+  },
+  "finalModelUnload": {
+    "attempted": true,
+    "ownedModel": "qwen3.5:4b-q4_K_M",
+    "residentAfter": [],
+    "unloaded": true
+  },
+  "isolatedBrowserServerCleanup": "artifacts/browser/v2-server-cleanup.json",
+  "modelRetained": "qwen3.5:4b-q4_K_M",
+  "localPersistentDemoDataPreserved": true,
+  "noModelDeletionOrStartupChanges": true,
+  "previousBenchmarkUnchanged": true
+}

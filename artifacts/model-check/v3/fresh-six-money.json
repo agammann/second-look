@@ -1,0 +1,14 @@
+{
+  "kind": "Separate deterministic fixture arithmetic, not model output or app budget feature",
+  "source": "Parent-provided case4 amounts manually specified as trusted integer cents, not parsed from seller text",
+  "quantity": 4,
+  "unitPriceCents": 2200,
+  "deliveryCents": 1500,
+  "otherChargesCents": 0,
+  "budgetCents": 10000,
+  "totalCents": 10300,
+  "withinBudget": false,
+  "currency": "USD",
+  "modelUsed": false,
+  "providerUsed": false
+}

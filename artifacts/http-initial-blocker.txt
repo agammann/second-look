@@ -1,0 +1,5 @@
+Initial actual HTTP tests on 2026-10-09: 0/3 passed; every loopback request failed before application response:
+TypeError: fetch failed; cause connect EACCES 127.0.0.1:4319, syscall connect, errno -4092.
+Listening succeeded, but sandbox denied local client access.
+
+The tests/http.test.mjs suite subsequently uses an explicitly labeled in-process transport double to test the real request handler. That suite is NOT a live HTTP pass. scripts/check-http.mjs preserves a separate actual-network smoke result. No sandbox, firewall, public tunnel or network binding was changed.

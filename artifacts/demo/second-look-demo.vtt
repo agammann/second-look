@@ -1,0 +1,32 @@
+WEBVTT
+
+00:00.000 --> 00:05.800
+Second Look helps buyers read seller wording before checkout.
+All six collectibles and illustrations are fictional.
+
+00:05.800 --> 00:14.208
+The local Qwen model selects exact seller excerpts and neutral questions.
+Source checks establish quotation integrity; they do not verify truth or completeness.
+
+00:14.208 --> 00:25.000
+Read the complete saved listing and compare each requirement with its context.
+The buyer makes an independent assessment.
+
+00:25.000 --> 00:35.625
+The saved acknowledgement enables an order for the reviewed $48.00 USD, version 1.
+PayPal uses sandbox accounts and test funds only.
+
+00:35.625 --> 00:42.000
+The fictitious buyer approved on PayPal between takes; its account screen is excluded.
+The app checks APPROVED status separately. No capture has yet been recorded.
+
+00:42.000 --> 00:48.000
+Capture is requested explicitly. The server verifies the completed sandbox capture.
+A browser return URL cannot mark the order paid.
+
+00:48.000 --> 00:52.625
+The receipt keeps the saved listing, server amount, version and actual capture status.
+
+00:52.625 --> 01:05.000
+A fresh reload preserves the same completed capture and saved review.
+See the source and setup guide for retrieval limitations and local judge access.

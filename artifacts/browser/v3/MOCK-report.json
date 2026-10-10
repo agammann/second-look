@@ -1,0 +1,846 @@
+{
+  "startedAt": "2026-10-10T01:45:00.027Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "listing retains seller statement disclaimer and server-owned price",
+      "pass": true
+    },
+    {
+      "name": "loading disables repeated review submission",
+      "pass": true
+    },
+    {
+      "name": "repeated click produced one review request",
+      "pass": true
+    },
+    {
+      "name": "requirements remain beside unverified suggested quotes and full saved seller context",
+      "pass": true
+    },
+    {
+      "name": "explicit acknowledgement required before review confirmation",
+      "pass": true
+    },
+    {
+      "name": "editing an unconfirmed draft disables an enabled buyer confirmation",
+      "pass": true
+    },
+    {
+      "name": "confirmation restores keyboard focus to its heading",
+      "pass": true
+    },
+    {
+      "name": "sandbox checkout is visibly disabled without configuration",
+      "pass": true
+    },
+    {
+      "name": "review persists after refresh",
+      "pass": true
+    },
+    {
+      "name": "editing requirements requires a new review before further approval",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "merchant edit visibly invalidates reviewed version",
+      "pass": true
+    },
+    {
+      "name": "changed listing requires a fresh unconfirmed review snapshot",
+      "pass": true
+    },
+    {
+      "name": "buyer explicitly approves the fresh version before disabled checkout",
+      "pass": true
+    },
+    {
+      "name": "back/navigation returns a working catalogue",
+      "pass": true
+    },
+    {
+      "name": "browser forward restores the saved review and shop link still works",
+      "pass": true
+    },
+    {
+      "name": "MOCK wrong variant and wrong component remain unverified quote suggestions, never verdicts",
+      "pass": true
+    },
+    {
+      "name": "MOCK instruction exclusion keeps complete saved context and omitted passages visible",
+      "pass": true
+    },
+    {
+      "name": "MOCK malicious listing markup renders as literal text without HTML execution",
+      "pass": true
+    },
+    {
+      "name": "MOCK quote-first review supports keyboard acknowledgement and refresh persistence",
+      "pass": true
+    },
+    {
+      "name": "MOCK full context and suggestions wrap without mobile overflow",
+      "pass": true
+    },
+    {
+      "name": "MOCK missing has no displayed suggestions or invented AI premises",
+      "pass": true
+    },
+    {
+      "name": "MOCK invalid has no displayed suggestions or invented AI premises",
+      "pass": true
+    },
+    {
+      "name": "MOCK unavailable has no displayed suggestions or invented AI premises",
+      "pass": true
+    },
+    {
+      "name": "MOCK untrusted has no displayed suggestions or invented AI premises",
+      "pass": true
+    },
+    {
+      "name": "MOCK source-mismatch has no displayed suggestions or invented AI premises",
+      "pass": true
+    },
+    {
+      "name": "MOCK legacy review preserves seller excerpts and full context without old verdicts or advice",
+      "pass": true
+    },
+    {
+      "name": "MOCK pending receipt retains its snapshot and actual capture field without paid/verdict claims",
+      "pass": true
+    },
+    {
+      "name": "MOCK ambiguous receipt retains its snapshot and actual capture field without paid/verdict claims",
+      "pass": true
+    },
+    {
+      "name": "MOCK failed receipt retains its snapshot and actual capture field without paid/verdict claims",
+      "pass": true
+    },
+    {
+      "name": "MOCK cancelled receipt retains its snapshot and actual capture field without paid/verdict claims",
+      "pass": true
+    },
+    {
+      "name": "MOCK legacy receipt retains its snapshot and actual capture field without paid/verdict claims",
+      "pass": true
+    },
+    {
+      "name": "MOCK explicit local cancellation never records paid",
+      "pass": true
+    },
+    {
+      "name": "disabled checkout makes no order creation or provider action request",
+      "pass": true
+    },
+    {
+      "name": "console health",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-01-catalogue-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-02-requirements-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-03-evidence-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-04-evidence-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-05-stale-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-07-fresh-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-08-fresh-approval-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-06-catalogue-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-wrong-component-variant-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-wrong-component-variant-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-no-suggestions-missing.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-no-suggestions-invalid.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-no-suggestions-unavailable.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-no-suggestions-untrusted.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-no-suggestions-source-mismatch.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-legacy-review.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-receipt-pending.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-receipt-ambiguous.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-receipt-failed.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-receipt-cancelled.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-receipt-legacy.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK\\MOCK-cancel-action.png"
+  ],
+  "screenshotStates": [
+    {
+      "file": "MOCK-01-catalogue-desktop.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-02-requirements-desktop.png",
+      "focus": "requirement-3",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-03-evidence-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-04-evidence-mobile.png",
+      "focus": "requirement-1",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-05-stale-review-desktop.png",
+      "focus": "BODY",
+      "scrollY": 643,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-07-fresh-review-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 643,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-08-fresh-approval-desktop.png",
+      "focus": "approval-heading",
+      "scrollY": 645,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-06-catalogue-mobile.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-wrong-component-variant-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-wrong-component-variant-mobile.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-no-suggestions-missing.png",
+      "focus": "evidence-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-no-suggestions-invalid.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-no-suggestions-unavailable.png",
+      "focus": "evidence-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-no-suggestions-untrusted.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-no-suggestions-source-mismatch.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-legacy-review.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-receipt-pending.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-receipt-ambiguous.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-receipt-failed.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-receipt-cancelled.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-receipt-legacy.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "MOCK-cancel-action.png",
+      "focus": "receipt-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    }
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> suggested seller quotes and neutral questions -> saved full seller context -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review -> fresh review and approval",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/mock-review-1/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/merchant/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/mock-review-2/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-2"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/atlas-station"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/mock-review-3/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-3"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/atlas-station"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-legacy-review"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-pending"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-ambiguous"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-cancelled"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-legacy"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-awaiting_approval"
+    },
+    {
+      "method": "POST",
+      "path": "/api/orders/mock-awaiting_approval/cancel"
+    }
+  ],
+  "artifactDirectory": "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-45-00-027Z-MOCK",
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4322",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "review": {
+    "id": "mock-review-1",
+    "version": 1,
+    "model": "MOCK UI FIXTURE - no model call",
+    "evidenceVersion": "MOCK-quote-first-v3",
+    "durationMs": 0,
+    "kind": "quote-suggestions",
+    "sourceDigest": "ff3849249ef5357f8abe4c391234f3e07354d46cab5d9a8a99a027a29ef33756",
+    "sourceSpans": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 70,
+        "text": "Orbit Courier is the original 1998 first edition wind-up tin explorer.",
+        "eligible": true
+      },
+      {
+        "id": "s2",
+        "start": 71,
+        "end": 133,
+        "text": "The original box, printed manual and winding key are included.",
+        "eligible": true
+      },
+      {
+        "id": "s3",
+        "start": 134,
+        "end": 186,
+        "text": "All four interchangeable antenna pieces are present.",
+        "eligible": true
+      },
+      {
+        "id": "s4",
+        "start": 187,
+        "end": 272,
+        "text": "The box has a softened corner and the figure has a small paint chip on its left boot.",
+        "eligible": true
+      },
+      {
+        "id": "s5",
+        "start": 273,
+        "end": 326,
+        "text": "The seller has not independently verified its origin.",
+        "eligible": true
+      }
+    ],
+    "results": [
+      {
+        "requirement": "original edition",
+        "suggestions": [
+          {
+            "spanId": "s1",
+            "quote": "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      },
+      {
+        "requirement": "all four antenna pieces",
+        "suggestions": [
+          {
+            "spanId": "s3",
+            "quote": "All four interchangeable antenna pieces are present."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      },
+      {
+        "requirement": "manufacturer warranty",
+        "suggestions": [],
+        "questions": [
+          {
+            "id": "q_clarify",
+            "text": "What would you like the merchant to clarify about this requirement?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      }
+    ]
+  },
+  "merchantEdited": {
+    "version": 2,
+    "priceCents": 4900,
+    "currency": "USD"
+  },
+  "staleReview": {
+    "id": "mock-review-1",
+    "version": 1,
+    "priceCents": 4800,
+    "stale": true
+  },
+  "merchantEdit": "MOCK browser-only merchant edit incremented the fixture version. No server listing was changed.",
+  "merchantOriginal": {
+    "description": "Orbit Courier is the original 1998 first edition wind-up tin explorer. The original box, printed manual and winding key are included. All four interchangeable antenna pieces are present. The box has a softened corner and the figure has a small paint chip on its left boot. The seller has not independently verified its origin.",
+    "price": "48.00"
+  },
+  "rereview": {
+    "id": "mock-review-2",
+    "version": 2,
+    "priceCents": 4900,
+    "model": "MOCK UI FIXTURE - no model call",
+    "evidenceVersion": "MOCK-quote-first-v3",
+    "durationMs": 0,
+    "kind": "quote-suggestions",
+    "sourceDigest": "14edd803f71510b1b1b9bf1f16acc7846c48992b98223c60e3f041846f349ed5",
+    "sourceSpans": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 70,
+        "text": "Orbit Courier is the original 1998 first edition wind-up tin explorer.",
+        "eligible": true
+      },
+      {
+        "id": "s2",
+        "start": 71,
+        "end": 133,
+        "text": "The original box, printed manual and winding key are included.",
+        "eligible": true
+      },
+      {
+        "id": "s3",
+        "start": 134,
+        "end": 186,
+        "text": "All four interchangeable antenna pieces are present.",
+        "eligible": true
+      },
+      {
+        "id": "s4",
+        "start": 187,
+        "end": 272,
+        "text": "The box has a softened corner and the figure has a small paint chip on its left boot.",
+        "eligible": true
+      },
+      {
+        "id": "s5",
+        "start": 273,
+        "end": 326,
+        "text": "The seller has not independently verified its origin.",
+        "eligible": true
+      },
+      {
+        "id": "s6",
+        "start": 327,
+        "end": 363,
+        "text": "Controlled browser QA merchant edit.",
+        "eligible": true
+      }
+    ],
+    "results": [
+      {
+        "requirement": "original edition",
+        "suggestions": [
+          {
+            "spanId": "s1",
+            "quote": "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      },
+      {
+        "requirement": "all four antenna pieces",
+        "suggestions": [
+          {
+            "spanId": "s3",
+            "quote": "All four interchangeable antenna pieces are present."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      },
+      {
+        "requirement": "manufacturer warranty",
+        "suggestions": [],
+        "questions": [
+          {
+            "id": "q_clarify",
+            "text": "What would you like the merchant to clarify about this requirement?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture. Exact source integrity does not establish relevance, completeness or truth."
+      }
+    ],
+    "confirmedAt": "2026-10-10T01:45:03.899Z"
+  },
+  "finishedAt": "2026-10-10T01:45:09.388Z"
+}

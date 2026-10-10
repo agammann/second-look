@@ -1,0 +1,370 @@
+{
+  "startedAt": "2026-10-10T00:43:59.490Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "listing retains seller statement disclaimer and server-owned price",
+      "pass": true
+    },
+    {
+      "name": "loading disables repeated review submission",
+      "pass": true
+    },
+    {
+      "name": "repeated click produced one review request",
+      "pass": true
+    },
+    {
+      "name": "live review receives the current local model response rather than unavailable fallback",
+      "pass": true
+    },
+    {
+      "name": "requirements remain beside visible status and exact source quotes",
+      "pass": true
+    },
+    {
+      "name": "explicit acknowledgement required before review confirmation",
+      "pass": true
+    },
+    {
+      "name": "editing an unconfirmed draft disables an enabled buyer confirmation",
+      "pass": true
+    },
+    {
+      "name": "confirmation restores keyboard focus to its heading",
+      "pass": true
+    },
+    {
+      "name": "sandbox checkout is visibly disabled without configuration",
+      "pass": true
+    },
+    {
+      "name": "review persists after refresh",
+      "pass": true
+    },
+    {
+      "name": "editing requirements requires a new review before further approval",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "merchant edit visibly invalidates reviewed version",
+      "pass": true
+    },
+    {
+      "name": "changed listing requires a fresh unconfirmed review snapshot",
+      "pass": true
+    },
+    {
+      "name": "buyer explicitly approves the fresh version before disabled checkout",
+      "pass": true
+    },
+    {
+      "name": "back/navigation returns a working catalogue",
+      "pass": true
+    },
+    {
+      "name": "browser forward restores the saved review and shop link still works",
+      "pass": true
+    },
+    {
+      "name": "disabled checkout makes no order creation or provider action request",
+      "pass": true
+    },
+    {
+      "name": "console health",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\01-catalogue-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\02-requirements-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\03-evidence-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\04-evidence-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\05-stale-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\07-fresh-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\08-fresh-approval-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\06-catalogue-mobile.png"
+  ],
+  "screenshotStates": [
+    {
+      "file": "01-catalogue-desktop.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "02-requirements-desktop.png",
+      "focus": "requirement-3",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "03-evidence-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "04-evidence-mobile.png",
+      "focus": "requirement-1",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "05-stale-review-desktop.png",
+      "focus": "BODY",
+      "scrollY": 643,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "07-fresh-review-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 643,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "08-fresh-approval-desktop.png",
+      "focus": "approval-heading",
+      "scrollY": 645,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "06-catalogue-mobile.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    }
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> seller evidence -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review -> fresh review and approval",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": false,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/113bbe34-8928-4de2-8104-77d6bf065896/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/113bbe34-8928-4de2-8104-77d6bf065896"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/merchant/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/113bbe34-8928-4de2-8104-77d6bf065896"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/250f3323-88a2-4603-8bbb-bfdac4d1fbdf/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/250f3323-88a2-4603-8bbb-bfdac4d1fbdf"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4322",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "review": {
+    "id": "113bbe34-8928-4de2-8104-77d6bf065896",
+    "version": 1,
+    "model": "qwen3.5:4b-q4_K_M",
+    "evidenceVersion": "2026-10-10-v2",
+    "durationMs": 4946,
+    "results": [
+      {
+        "requirement": "original edition",
+        "status": "match",
+        "quotes": [
+          "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+        ],
+        "validation": "valid",
+        "reason": "The quoted seller statements appear consistent with this requirement. This is not authentication or proof of truth."
+      },
+      {
+        "requirement": "complete contents",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "invalid",
+        "reason": "The model proposed match; that conclusion was withheld. A quote does not describe the requested item or feature."
+      },
+      {
+        "requirement": "original box",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "invalid",
+        "reason": "The model proposed contradiction; that conclusion was withheld. No explicit incompatible descriptive claim was established; contradiction was withheld."
+      }
+    ]
+  },
+  "merchantEdited": {
+    "version": 2,
+    "priceCents": 4900,
+    "currency": "USD"
+  },
+  "staleReview": {
+    "id": "113bbe34-8928-4de2-8104-77d6bf065896",
+    "version": 1,
+    "priceCents": 4800,
+    "stale": true
+  },
+  "merchantEdit": "Opt-in --merchant-edit changed the synthetic listing and incremented its server version; original text/price are recorded below for reset.",
+  "merchantOriginal": {
+    "description": "Orbit Courier is the original 1998 first edition wind-up tin explorer. The original box, printed manual and winding key are included. All four interchangeable antenna pieces are present. The box has a softened corner and the figure has a small paint chip on its left boot. The seller has not independently verified its origin.",
+    "price": "48.00"
+  },
+  "rereview": {
+    "id": "250f3323-88a2-4603-8bbb-bfdac4d1fbdf",
+    "version": 2,
+    "priceCents": 4900,
+    "model": "qwen3.5:4b-q4_K_M",
+    "evidenceVersion": "2026-10-10-v2",
+    "durationMs": 6836,
+    "results": [
+      {
+        "requirement": "original edition",
+        "status": "match",
+        "quotes": [
+          "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+        ],
+        "validation": "valid",
+        "reason": "The quoted seller statements appear consistent with this requirement. This is not authentication or proof of truth."
+      },
+      {
+        "requirement": "complete contents",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "invalid",
+        "reason": "The model proposed match; that conclusion was withheld. A quote does not describe the requested item or feature."
+      },
+      {
+        "requirement": "original box",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "invalid",
+        "reason": "The model proposed contradiction; that conclusion was withheld. No explicit incompatible descriptive claim was established; contradiction was withheld."
+      }
+    ],
+    "confirmedAt": "2026-10-10T00:44:14.417Z"
+  },
+  "finishedAt": "2026-10-10T00:44:15.695Z"
+}

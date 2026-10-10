@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-10-10T01:49:18.646Z",
+  "modelFrozenAt": "2026-10-10T01:46:26.096Z",
+  "rawPath": "tests/fixtures/independent-quote-v3-raw.json",
+  "rawSha256": "384f51fb5ad6667e4b446924c6d0fc55a8d50926312cc28a3c5a4810e6920e87",
+  "canonicalInputSha256": "b4df445c19710fd6612ec7ff5762d67b21201c32aab9e1e3362de34d504b93f7",
+  "caseCount": 6,
+  "requirementsCount": 8,
+  "mappingPolicy": "Exact complete requirements and listing strings preserved; essential quotes/questions/pitfalls are evaluation criteria only, never model input. No verdict scoring."
+}

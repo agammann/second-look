@@ -1,0 +1,73 @@
+{
+  "startedAt": "2026-10-10T01:43:40.798Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "current catalogue capture uses only read-only configuration/listing APIs",
+      "pass": true
+    },
+    {
+      "name": "console health",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-43-40-798Z-ACTUAL\\CURRENT-catalogue-desktop.png"
+  ],
+  "screenshotStates": [
+    {
+      "file": "CURRENT-catalogue-desktop.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    }
+  ],
+  "flow": "current catalogue only; read-only API GETs, no model or provider requests",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": false,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    }
+  ],
+  "artifactDirectory": "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v3\\runs\\2026-10-10T01-43-40-798Z-ACTUAL",
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4322",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    }
+  ],
+  "finishedAt": "2026-10-10T01:43:41.419Z"
+}

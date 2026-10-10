@@ -1,0 +1,57 @@
+{
+  "version": "2026-10-10-v3",
+  "model": "qwen3.5:4b-q4_K_M",
+  "frozenAt": "2026-10-10T01:46:26.096Z",
+  "moduleSha256": "97b5d56012cb40331ddd87f5b7af24d459cefe5c37aa25a5ff5c72fd4d66e130",
+  "validatorSha256": "97b5d56012cb40331ddd87f5b7af24d459cefe5c37aa25a5ff5c72fd4d66e130",
+  "promptSha256": "3249ce0fcdb46fbfd6c91e5ca341a43094f672e4938a8fbc9e95f352756b6e99",
+  "schemaSha256": "332423f3c2bc795c51d5060d3d09caaf123a74dc48aef2afc31a77b5c80992bc",
+  "questionCatalogueSha256": "8b7d6420d0453afa90fedf9e8b4e9123f4e063e1e16a378d23b7ae8017d81d9c",
+  "requestSchemaExamples": [
+    {
+      "requirements": 1,
+      "sourceIds": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "sha256": "d5675daa450188ecfeeb7bd7e0e5b493ef5b9e704327ed622a81bff84570dab4"
+    },
+    {
+      "requirements": 2,
+      "sourceIds": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "sha256": "a40a2ba8c781762083ec8de599166d81196c6060911af0e8c559a3891d7a591e"
+    },
+    {
+      "requirements": 3,
+      "sourceIds": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "sha256": "9ce51e96242e64bf634b0b18a14a5a903d6d6ad35a0284120ca7c85f92021d50"
+    }
+  ],
+  "limits": {
+    "description": 2400,
+    "requirements": 3,
+    "requirement": 160,
+    "spans": 32,
+    "suggestions": 3,
+    "questions": 2,
+    "responseBytes": 32768,
+    "content": 8192,
+    "context": 4096,
+    "outputTokens": 600
+  },
+  "mockedChecks": {
+    "currentV3": 20,
+    "independentMechanicalAudit": 26
+  },
+  "policy": "Quote-first exact immutable source IDs and fixed neutral question IDs. Integrity is mechanical only; relevance, semantic coverage, omissions, component/variant scope, completeness, authenticity and truth unverified. No buying verdicts. Full immutable seller listing visible. Malformed/unsupported output has empty suggestions. Model contract frozen before any v3 inference and before parent fresh six cases arrive. Historical exposed cases are not fresh evaluation.",
+  "note": "The dynamic request schema enumerates eligible IDs for each exact description; its implementation and bounds are pinned by module hash. Example schema hashes are reproducibility aids, not an enumeration of all possible seller inputs."
+}

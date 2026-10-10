@@ -1,0 +1,35 @@
+{
+  "actualResponses": 6,
+  "totalCases": 6,
+  "requirements": 8,
+  "validRows": 8,
+  "suggestions": 14,
+  "questions": 8,
+  "coldFirstMs": 3717,
+  "medianMs": 962.5,
+  "promptTokens": [
+    467,
+    478,
+    476,
+    471,
+    434,
+    477
+  ],
+  "outputTokens": [
+    21,
+    24,
+    27,
+    27,
+    21,
+    60
+  ],
+  "stopReasons": [
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop"
+  ],
+  "cleanupEmpty": true
+}

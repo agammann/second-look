@@ -1,0 +1,52 @@
+{
+  "createdAt": "2026-10-10T00:54:18.4922041Z",
+  "archiveBytes": 5217335,
+  "archiveSha256": "c3557f6201d658c9cef335130b3aae9cd339120abd144ebe7df1e1f3d8b06a07",
+  "entryCount": 128,
+  "archiveRequiredEntriesVerified": true,
+  "excludesCredentialsLocalStateRuntimesWeights": true,
+  "evidenceVersion": "2026-10-10-v2",
+  "finalDeterministicTests": {
+    "pass": 110,
+    "total": 110,
+    "current": 60,
+    "historicalV1": 50
+  },
+  "actualBrowser": {
+    "pass": 24,
+    "sandboxEnabled": true,
+    "total": 24
+  },
+  "mockBrowser": {
+    "pass": 34,
+    "total": 34
+  },
+  "freshIndependent": {
+    "falseMatches": 0,
+    "rawLabels": "5/8",
+    "fullContracts": "1/8",
+    "deliveredLabels": "2/8",
+    "falseContradictions": 1
+  },
+  "readiness": "Not ready: evidence reliability and real sandbox checkout remain blockers",
+  "packagedFrozenModuleVerified": true,
+  "sourceSanitization": {
+    "status": "sanitized public copy",
+    "source": "artifacts/delivery-v2.json",
+    "scope": "Local absolute paths and Library identifiers removed. Verified historical counts, hashes and test results preserved.",
+    "removedFields": [
+      {
+        "field": "archivePath",
+        "reason": "local path or attachment reference"
+      },
+      {
+        "field": "library",
+        "reason": "local Library reference"
+      },
+      {
+        "field": "actualCatalogueLibrary",
+        "reason": "local Library reference"
+      }
+    ]
+  }
+}

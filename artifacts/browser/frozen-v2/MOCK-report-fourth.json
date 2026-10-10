@@ -1,0 +1,77 @@
+{
+  "startedAt": "2026-10-10T00:27:59.348Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": false,
+      "error": "page.waitForFunction: Timeout 3000ms exceeded."
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-01-catalogue-desktop.png"
+  ],
+  "screenshotStates": [
+    {
+      "file": "MOCK-01-catalogue-desktop.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      }
+    }
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> seller evidence -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review -> fresh review and approval",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4310",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "error": "page.waitForFunction: Timeout 3000ms exceeded.",
+  "finishedAt": "2026-10-10T00:28:02.863Z"
+}

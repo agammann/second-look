@@ -1,0 +1,171 @@
+{
+  "auditedAt": "2026-10-10T00:21:09.836Z",
+  "reference": "Escaped-code-point transcription of exact JSON forwarded by parent before first run",
+  "allExact": true,
+  "differences": [],
+  "checks": [
+    {
+      "case": 1,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 2,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": [
+        {
+          "character": "’",
+          "codepoint": 8217
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 4,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 5,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 6,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": [
+        {
+          "character": "–",
+          "codepoint": 8211
+        },
+        {
+          "character": "’",
+          "codepoint": 8217
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 8,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 9,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 10,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 11,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true,
+        "updatedExpectation": true
+      },
+      "buyerNonAscii": []
+    },
+    {
+      "case": 12,
+      "fieldChecks": {
+        "buyer": true,
+        "listing": true,
+        "updatedListing": true,
+        "runtimeListing": true,
+        "runtimeRequirement": true,
+        "expectation": true
+      },
+      "buyerNonAscii": []
+    }
+  ],
+  "case11Mapping": "Exact buyer span An original Riverlight badge; budget excluded from model and separately calculated from trusted integer cents.",
+  "fixtureSha256": "e7bc604f21cbfc5ee3c87beef52ca30de0fa8c18a49e225b8bdf1a360512d518",
+  "rawReportSha256": "0960a6f8ecdfd224651784f116a766a09c981a8b179dfe343c4ed5a6e945681b",
+  "unicodeNote": "Cases 2 and 6 contain U+2019; cases 5/6 listing and case 6 buyer contain U+2013. Apparent ASCII apostrophe concern was terminal display only; no correction or rerun."
+}

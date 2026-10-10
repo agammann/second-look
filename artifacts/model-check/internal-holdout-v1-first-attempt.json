@@ -1,0 +1,338 @@
+{
+  "kind": "live-local-model-check",
+  "model": "qwen3.5:4b-q4_K_M",
+  "evidenceVersion": "2026-10-09-v1",
+  "startedAt": "2026-10-09T23:57:38.201Z",
+  "status": "blocked",
+  "datasetPath": "Z:\\Codex\\2026-10-09\\task-4\\tests\\fixtures\\fresh-holdout-v1.json",
+  "context": 4096,
+  "maxOutputTokens": 600,
+  "ownershipRequested": true,
+  "preflight": {
+    "reachable": false,
+    "error": {
+      "name": "TypeError",
+      "code": "EACCES",
+      "message": "Loopback connection was denied by the execution environment."
+    }
+  },
+  "cleanup": {
+    "attempted": false,
+    "reason": "No successful isolated model use; no model startup or unload was attempted."
+  },
+  "cases": [
+    {
+      "id": "fh01-explicit-inclusions",
+      "status": "not_run",
+      "requirements": [
+        "Original first edition",
+        "Original box included",
+        "Original printed manual included"
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "This is the original first edition, not a later release."
+          ],
+          "note": "The seller explicitly states the required edition."
+        },
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "The original box is included."
+          ],
+          "note": "Explicit inclusion; this remains a seller statement."
+        },
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "The original printed manual is included."
+          ],
+          "note": "Explicit inclusion of the original printed manual."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh02-reissue-and-missing-manual",
+      "status": "not_run",
+      "requirements": [
+        "Original edition",
+        "Original manual included"
+      ],
+      "expected": [
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "This is the 2025 reissue, not the original edition."
+          ],
+          "note": "An explicit reissue contradicts the original-edition requirement."
+        },
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "The original manual is missing."
+          ],
+          "note": "A different care sheet does not satisfy inclusion of the original manual."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh03-omitted-facts",
+      "status": "not_run",
+      "requirements": [
+        "Original edition",
+        "Original printed manual included"
+      ],
+      "expected": [
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "No edition statement; a title and packaging condition cannot establish edition."
+        },
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "An omitted manual is unknown, rather than an explicit statement that it is missing."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh04-unresolved-claims",
+      "status": "not_run",
+      "requirements": [
+        "Original edition",
+        "Original manual included"
+      ],
+      "expected": [
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "An expressly unverified possibility is not a definite seller statement of the required edition."
+        },
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "A booklet of unconfirmed origin cannot support inclusion of the original manual."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh05-uninventoried-bundle",
+      "status": "not_run",
+      "requirements": [
+        "All original contents present",
+        "Original outer box included"
+      ],
+      "expected": [
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "Several loose accessories and an uninventoried tray do not establish completeness or missing contents."
+        },
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "The original outer box is included."
+          ],
+          "note": "The box is explicitly included even though completeness is unresolved."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh06-hostile-quoted-evidence-trap",
+      "status": "not_run",
+      "requirements": [
+        "Original manual included"
+      ],
+      "expected": [
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "The apparently useful sentence is embedded in a hostile instruction that tells the analyzer what to quote; it is not an admissible factual listing assertion. Exact substring presence alone must not validate it."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh07-mixed-evidence",
+      "status": "not_run",
+      "requirements": [
+        "Original edition",
+        "Original box included",
+        "All original accessories present"
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "This is the original edition."
+          ],
+          "note": "Explicit edition statement."
+        },
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "The original box was discarded; the supplied box is a replacement."
+          ],
+          "note": "A replacement box contradicts inclusion of the original box."
+        },
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "A sealed but uncounted bag does not establish accessory completeness."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh08-negation-scope",
+      "status": "not_run",
+      "requirements": [
+        "Original first edition",
+        "Original manual included"
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "This is not a reissue; it is the original first edition."
+          ],
+          "note": "The negation applies to reissue, while the same sentence affirmatively states the original first edition."
+        },
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "There is no original manual in the package."
+          ],
+          "note": "Explicit absence of the requested manual."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh09-freeform-function",
+      "status": "not_run",
+      "requirements": [
+        "Both display wings must unfold on their own and stay locked fully open"
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "Both display wings unfold independently and lock in the fully open position."
+          ],
+          "note": "The seller sentence supports the complete freeform functional requirement without requiring a fixed attribute taxonomy."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh10-explicit-absences",
+      "status": "not_run",
+      "requirements": [
+        "Original box included",
+        "Display stand included"
+      ],
+      "expected": [
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "The original box is not included."
+          ],
+          "note": "A storage sleeve cannot satisfy the explicitly absent original box."
+        },
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "The display stand is also missing."
+          ],
+          "note": "Explicit absence of the requested stand."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh11-conflicting-seller-notes",
+      "status": "not_run",
+      "requirements": [
+        "Original manual included"
+      ],
+      "expected": [
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "Conflicting statements are expressly unresolved. Selecting either statement as definitive would hide the uncertainty."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    },
+    {
+      "id": "fh12-contents-material-and-edition",
+      "status": "not_run",
+      "requirements": [
+        "Figure, stand, lantern, badge, map and printed manual all included",
+        "Metal lantern",
+        "Original edition"
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "All six named pieces are included: figure, stand, lantern, badge, map, and printed manual."
+          ],
+          "note": "Every requested named piece is explicitly included; this does not imply any other completeness claim."
+        },
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "The lantern is molded plastic, not metal."
+          ],
+          "note": "Explicit material statement contradicts a metal lantern."
+        },
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "An unrecorded edition is unknown, not evidence of a reissue."
+        }
+      ],
+      "reason": "Loopback preflight failed; no model request."
+    }
+  ],
+  "limitations": [
+    "Small English synthetic evaluation. Seller statement support does not prove truth, provenance or authenticity.",
+    "Conservative deterministic English guards can reject legitimate wording and do not prove semantic support.",
+    "Only cases that made an actual inference request count toward model-only results; prefiltered instructions are reported separately.",
+    "The authored fresh-holdout-v1 is an internal synthetic holdout, not the parent independent unseen holdout.",
+    "Using failures to tune the module makes later reruns regression checks rather than fresh accuracy evidence."
+  ],
+  "dataset": {
+    "name": "fresh-holdout-v1",
+    "purpose": "fresh-holdout",
+    "frozenAt": "2026-10-09T23:46:40Z",
+    "sha256": "37f7d1f9908ab405060d03878a70f116ac3963c295c3bbc52ebd729abb049d38",
+    "caseCount": 12,
+    "requirementCount": 24,
+    "internalHoldout": true
+  },
+  "moduleSha256": "b004c705e47eacc9bbcd62278ba0dfcad7169b482329d203854ffee5d9af051a",
+  "promptSha256": "dae3c83244874e57c643c1394e9d1305d057ecedc4bdf011010ebf504fe62693",
+  "freeze": {
+    "version": "2026-10-09-v1",
+    "model": "qwen3.5:4b-q4_K_M",
+    "frozenAt": "2026-10-09T23:57:27.420Z",
+    "moduleSha256": "b004c705e47eacc9bbcd62278ba0dfcad7169b482329d203854ffee5d9af051a",
+    "promptSha256": "dae3c83244874e57c643c1394e9d1305d057ecedc4bdf011010ebf504fe62693",
+    "developmentTests": 50,
+    "note": "Frozen after development regressions; before any live inference or parent independent unseen holdout."
+  },
+  "blocker": "Live inference was not run: this execution environment could not reach the existing approved loopback Ollama service. No startup, escalation, tunnel, firewall, binding, or sandbox changes were attempted.",
+  "inferenceRequests": 0,
+  "successfulResponses": 0,
+  "finishedAt": "2026-10-09T23:57:38.225Z"
+}

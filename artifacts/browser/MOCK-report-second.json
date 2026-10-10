@@ -1,0 +1,219 @@
+{
+  "startedAt": "2026-10-10T00:06:28.719Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "listing retains seller statement disclaimer and server-owned price",
+      "pass": true
+    },
+    {
+      "name": "loading disables repeated review submission",
+      "pass": true
+    },
+    {
+      "name": "repeated click produced one review request",
+      "pass": true
+    },
+    {
+      "name": "requirements remain beside visible status and exact source quotes",
+      "pass": true
+    },
+    {
+      "name": "explicit acknowledgement required before review confirmation",
+      "pass": true
+    },
+    {
+      "name": "confirmation restores keyboard focus to its heading",
+      "pass": true
+    },
+    {
+      "name": "sandbox checkout is visibly disabled without configuration",
+      "pass": true
+    },
+    {
+      "name": "review persists after refresh",
+      "pass": true
+    },
+    {
+      "name": "editing requirements requires a new review before further approval",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "merchant edit visibly invalidates reviewed version",
+      "pass": true
+    },
+    {
+      "name": "back/navigation returns a working catalogue",
+      "pass": true
+    },
+    {
+      "name": "MOCK match, contradiction and unknown cards use visible status words",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-01-catalogue-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-02-requirements-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-03-evidence-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-04-evidence-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-05-stale-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-06-catalogue-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-evidence-three-statuses.png"
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> seller evidence -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/mock-review-1/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/merchant/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/atlas-station"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4310",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "review": {
+    "id": "mock-review-1",
+    "version": 1,
+    "model": "MOCK UI FIXTURE — no model call",
+    "results": [
+      {
+        "requirement": "original edition",
+        "status": "match",
+        "quotes": [
+          "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture; not a live evidence evaluation."
+      },
+      {
+        "requirement": "all four antenna pieces",
+        "status": "match",
+        "quotes": [
+          "All four interchangeable antenna pieces are present."
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture; not a live evidence evaluation."
+      },
+      {
+        "requirement": "manufacturer warranty",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "valid",
+        "reason": "MOCK unknown fixture; this requirement is not stated."
+      }
+    ]
+  },
+  "merchantEdit": "Opt-in --merchant-edit changed the synthetic listing and incremented its server version; original text/price are recorded below for reset.",
+  "merchantOriginal": {
+    "description": "Orbit Courier is the original 1998 first edition wind-up tin explorer. The original box, printed manual and winding key are included. All four interchangeable antenna pieces are present. The box has a softened corner and the figure has a small paint chip on its left boot. The seller has not independently verified its origin.",
+    "price": "48.00"
+  },
+  "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('MOCK malformed-output fixture; unsupported output remains unknown.', { exact: true }) to be visible\u001b[22m\n",
+  "finishedAt": "2026-10-10T00:07:01.377Z"
+}

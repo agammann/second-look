@@ -1,0 +1,183 @@
+{
+  "startedAt": "2026-10-10T00:07:30.044Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "listing retains seller statement disclaimer and server-owned price",
+      "pass": true
+    },
+    {
+      "name": "loading disables repeated review submission",
+      "pass": true
+    },
+    {
+      "name": "repeated click produced one review request",
+      "pass": true
+    },
+    {
+      "name": "requirements remain beside visible status and exact source quotes",
+      "pass": true
+    },
+    {
+      "name": "explicit acknowledgement required before review confirmation",
+      "pass": true
+    },
+    {
+      "name": "confirmation restores keyboard focus to its heading",
+      "pass": true
+    },
+    {
+      "name": "sandbox checkout is visibly disabled without configuration",
+      "pass": true
+    },
+    {
+      "name": "review persists after refresh",
+      "pass": true
+    },
+    {
+      "name": "editing requirements requires a new review before further approval",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "back/navigation returns a working catalogue",
+      "pass": true
+    },
+    {
+      "name": "console health",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\01-catalogue-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\02-requirements-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\03-evidence-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\04-evidence-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\06-catalogue-mobile.png"
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> seller evidence -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": false,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/641a8d9d-2d9d-4c5b-b4ae-23c8d465138e/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/641a8d9d-2d9d-4c5b-b4ae-23c8d465138e"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4310",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "review": {
+    "id": "641a8d9d-2d9d-4c5b-b4ae-23c8d465138e",
+    "version": 1,
+    "model": "qwen3.5:4b-q4_K_M",
+    "results": [
+      {
+        "requirement": "original edition",
+        "status": "match",
+        "quotes": [
+          "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+        ],
+        "validation": "valid",
+        "reason": "The quoted seller statements appear consistent with this requirement. This is not authentication or proof of truth."
+      },
+      {
+        "requirement": "complete contents",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "invalid",
+        "reason": "Evidence must copy an exact complete sentence or line from the seller description. A missing, altered, or shortened quote was rejected."
+      },
+      {
+        "requirement": "original box",
+        "status": "match",
+        "quotes": [
+          "The original box, printed manual and winding key are included."
+        ],
+        "validation": "valid",
+        "reason": "The quoted seller statements appear consistent with this requirement. This is not authentication or proof of truth."
+      }
+    ]
+  },
+  "finishedAt": "2026-10-10T00:07:35.949Z"
+}

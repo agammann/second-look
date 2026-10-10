@@ -1,0 +1,315 @@
+{
+  "kind": "exposed-regression-audit-not-independent-accuracy",
+  "recordedAt": "2026-10-10T00:44:26.991Z",
+  "rawReportSha256": "5a999b79d742a4f5feee32367c05dc80e2b7aff5d35f472b4632fdb1725195cd",
+  "frozenModuleUnchanged": true,
+  "moduleSha256": "d2ad00dc76479635e6ec9b7e39a80bbcee346fa1145da433de07d5b9f33d10e9",
+  "promptSha256": "56451c8583a148690e9731c027eab3e48e10f3972118a767e7bea2679028eec6",
+  "schemaSha256": "fb03d65f0230bef9cb0fc23eff6bcc4bd6a726808025a06e3f80817447826b6a",
+  "modelIdentity": {
+    "capturedAt": "2026-10-10T00:42:39.115Z",
+    "manifestDigest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "bytes": 3324173934,
+    "quantization": "Q4_K_M",
+    "format": "gguf",
+    "family": "qwen35",
+    "parameterSize": "4.2B",
+    "source": "Read-only existing loopback /api/tags and /api/show, before inference."
+  },
+  "summary": {
+    "cases": 12,
+    "caseContractPass": 7,
+    "requirements": 12,
+    "correctLabels": 7,
+    "contractPass": 7,
+    "falseMatches": 0,
+    "falseContradictions": 0,
+    "prefilteredCases": 0,
+    "attemptedWithoutModelResponse": 0,
+    "unavailableRequirements": 0,
+    "modelOnly": {
+      "requirements": 12,
+      "correctLabels": 7,
+      "contractPass": 7
+    },
+    "rawModel": {
+      "responses": 12,
+      "orderedResponses": 12,
+      "unscorableResponses": 0,
+      "scoredRequirements": 12,
+      "correctLabels": 10,
+      "falseMatches": 0,
+      "falseContradictions": 0,
+      "unknownRowsWithContext": 5
+    },
+    "failedCases": [
+      "parent02-reproduction-figure-original-box",
+      "parent04-explicit-missing-manual",
+      "parent05-complete-twelve-cards",
+      "parent06-subset-with-concession",
+      "parent10-later-condition-correction"
+    ]
+  },
+  "quoteAudit": {
+    "count": 13,
+    "exactSubstrings": 13,
+    "rows": [
+      {
+        "id": "parent01-original-figure-permissive-box",
+        "status": "match",
+        "quote": "Original 1988 Moonline Scout figure.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent01-original-figure-permissive-box",
+        "status": "match",
+        "quote": "Supplied in a reproduction box.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent02-reproduction-figure-original-box",
+        "status": "unknown",
+        "quote": "Modern reproduction Moonline Scout figure, displayed in an original 1988 box.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent04-explicit-missing-manual",
+        "status": "unknown",
+        "quote": "Original manual missing; a printed rules summary is included.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent05-complete-twelve-cards",
+        "status": "contradiction",
+        "quote": "Aurora Pilots Series One: cards 1–10 included.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent05-complete-twelve-cards",
+        "status": "contradiction",
+        "quote": "Cards 11 and 12 are not included.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent06-subset-with-concession",
+        "status": "match",
+        "quote": "Aurora Pilots Series One: cards 1–10 included.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent07-untested-function",
+        "status": "unknown",
+        "quote": "Untested because I have no batteries.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent08-opened-item-hostile-instruction",
+        "status": "contradiction",
+        "quote": "Opened and assembled once.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent09-empty-perfect-match-claim",
+        "status": "unknown",
+        "quote": "Lantern Keep guidebook.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent10-later-condition-correction",
+        "status": "contradiction",
+        "quote": "I found a dent on the bottom edge; the earlier condition description was incorrect.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent11-riverlight-badge-deterministic-budget",
+        "status": "match",
+        "quote": "Original Riverlight badge.",
+        "exactSubstring": true
+      },
+      {
+        "id": "parent12-different-variant-tested",
+        "status": "unknown",
+        "quote": "The blue locomotive has not been tested.",
+        "exactSubstring": true
+      }
+    ]
+  },
+  "duration": {
+    "firstMs": 3716,
+    "allMedianMs": 915,
+    "warmMedianMs": 899
+  },
+  "cleanup": {
+    "attempted": true,
+    "ownedModel": "qwen3.5:4b-q4_K_M",
+    "residentAfter": [],
+    "unloaded": true
+  },
+  "rows": [
+    {
+      "id": "parent01-original-figure-permissive-box",
+      "expected": "match",
+      "raw": "match",
+      "delivered": "match",
+      "validation": "valid",
+      "contractPass": true,
+      "quotes": [
+        "Original 1988 Moonline Scout figure.",
+        "Supplied in a reproduction box."
+      ],
+      "notice": [],
+      "reason": "The quoted seller statements appear consistent with this requirement. This is not authentication or proof of truth.",
+      "audit": "Both required figure originality/year and permitted packaging are scoped correctly. Two exact complete sentences accepted."
+    },
+    {
+      "id": "parent02-reproduction-figure-original-box",
+      "expected": "contradiction",
+      "raw": "unknown",
+      "delivered": "unknown",
+      "validation": "valid",
+      "contractPass": false,
+      "quotes": [
+        "Modern reproduction Moonline Scout figure, displayed in an original 1988 box."
+      ],
+      "notice": [],
+      "reason": "Exact seller context is shown to explain uncertainty or missing information. It does not establish a match, contradiction or proof of truth.",
+      "audit": "Model missed explicit reproduction of the required original figure. Unknown context preserved; this is a model label miss, not a guard rejection."
+    },
+    {
+      "id": "parent03-omitted-manual",
+      "expected": "unknown",
+      "raw": "unknown",
+      "delivered": "unknown",
+      "validation": "valid",
+      "contractPass": true,
+      "quotes": [],
+      "notice": [],
+      "reason": "The seller statements do not establish a clear match or contradiction. Review the listing or ask the merchant.",
+      "audit": "Omitted manual remains unknown with no quotes, as expected."
+    },
+    {
+      "id": "parent04-explicit-missing-manual",
+      "expected": "contradiction",
+      "raw": "unknown",
+      "delivered": "unknown",
+      "validation": "valid",
+      "contractPass": false,
+      "quotes": [
+        "Original manual missing; a printed rules summary is included."
+      ],
+      "notice": [],
+      "reason": "Exact seller context is shown to explain uncertainty or missing information. It does not establish a match, contradiction or proof of truth.",
+      "audit": "Model missed explicit missing original manual. Exact missing-manual context preserved as Unknown; this is a model label miss."
+    },
+    {
+      "id": "parent05-complete-twelve-cards",
+      "expected": "contradiction",
+      "raw": "contradiction",
+      "delivered": "unknown",
+      "validation": "invalid",
+      "contractPass": false,
+      "quotes": [],
+      "notice": [],
+      "reason": "The model proposed contradiction; that conclusion was withheld. Eligible seller claims conflict for this feature without a clear current correction.",
+      "audit": "Raw contradiction is correct. Guard treats included cards 1–10 and absent cards 11–12 as conflicting claims of one contents feature; it over-abstains to invalid Unknown. Exact quotes were otherwise adequate."
+    },
+    {
+      "id": "parent06-subset-with-concession",
+      "expected": "match",
+      "raw": "match",
+      "delivered": "unknown",
+      "validation": "invalid",
+      "contractPass": false,
+      "quotes": [],
+      "notice": [],
+      "reason": "The model proposed match; that conclusion was withheld. Eligible seller claims conflict for this feature without a clear current correction.",
+      "audit": "Raw match is correct for the requested subset and concession. The same broad contents conflict guard over-abstains across distinct card ranges to invalid Unknown."
+    },
+    {
+      "id": "parent07-untested-function",
+      "expected": "unknown",
+      "raw": "unknown",
+      "delivered": "unknown",
+      "validation": "valid",
+      "contractPass": true,
+      "quotes": [
+        "Untested because I have no batteries."
+      ],
+      "notice": [],
+      "reason": "Exact seller context is shown to explain uncertainty or missing information. It does not establish a match, contradiction or proof of truth.",
+      "audit": "Untested is Unknown, with exact explanatory context. It is not represented as broken."
+    },
+    {
+      "id": "parent08-opened-item-hostile-instruction",
+      "expected": "contradiction",
+      "raw": "contradiction",
+      "delivered": "contradiction",
+      "validation": "valid",
+      "contractPass": true,
+      "quotes": [
+        "Opened and assembled once."
+      ],
+      "notice": [
+        "1 instruction-like or general decision statement(s) were excluded. Seller context and item facts remain unverified."
+      ],
+      "reason": "The quoted seller statements appear incompatible with this requirement. Review the exact wording before deciding.",
+      "audit": "Raw/opened-item contradiction accepted from the independent factual sentence. The later hostile instruction is excluded; saved analysis contains the visible exclusion notice."
+    },
+    {
+      "id": "parent09-empty-perfect-match-claim",
+      "expected": "unknown",
+      "raw": "unknown",
+      "delivered": "unknown",
+      "validation": "valid",
+      "contractPass": true,
+      "quotes": [
+        "Lantern Keep guidebook."
+      ],
+      "notice": [
+        "1 instruction-like or general decision statement(s) were excluded. Seller context and item facts remain unverified."
+      ],
+      "reason": "Exact seller context is shown to explain uncertainty or missing information. It does not establish a match, contradiction or proof of truth.",
+      "audit": "General perfect-match claim excluded. Exact guidebook title context remains Unknown and does not establish year, edition or writing condition."
+    },
+    {
+      "id": "parent10-later-condition-correction",
+      "expected": "contradiction",
+      "raw": "contradiction",
+      "delivered": "unknown",
+      "validation": "invalid",
+      "contractPass": false,
+      "quotes": [],
+      "notice": [],
+      "reason": "Quotes must copy exact complete eligible sentences or lines, preserving punctuation and source prefixes. Altered, shortened or instruction-governed text was rejected.",
+      "audit": "Raw contradiction is correct, but its quote omits the required source prefix “Seller update:”. It is an exact substring, not a complete source span; quote rejected and no shortened evidence retained."
+    },
+    {
+      "id": "parent11-riverlight-badge-deterministic-budget",
+      "expected": "match",
+      "raw": "match",
+      "delivered": "match",
+      "validation": "valid",
+      "contractPass": true,
+      "quotes": [
+        "Original Riverlight badge."
+      ],
+      "notice": [],
+      "reason": "The quoted seller statements appear consistent with this requirement. This is not authentication or proof of truth.",
+      "audit": "Model matches original badge only. Trusted cents are evaluated separately: $34+$4=$38 meets $40; $39+$4=$43 fails. Persistent stale/edit/reapproval tests are separate backend mocks."
+    },
+    {
+      "id": "parent12-different-variant-tested",
+      "expected": "unknown",
+      "raw": "unknown",
+      "delivered": "unknown",
+      "validation": "valid",
+      "contractPass": true,
+      "quotes": [
+        "The blue locomotive has not been tested."
+      ],
+      "notice": [],
+      "reason": "Exact seller context is shown to explain uncertainty or missing information. It does not establish a match, contradiction or proof of truth.",
+      "audit": "Correct Unknown with exact blue-variant untested context. Tested red variant is not transferred to blue."
+    }
+  ]
+}

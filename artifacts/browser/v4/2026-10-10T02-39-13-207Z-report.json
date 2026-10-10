@@ -1,0 +1,525 @@
+{
+  "startedAt": "2026-10-10T02:39:13.207Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "listing retains seller statement disclaimer and server-owned price",
+      "pass": true
+    },
+    {
+      "name": "loading disables repeated review submission",
+      "pass": true
+    },
+    {
+      "name": "repeated click produced one review request",
+      "pass": true
+    },
+    {
+      "name": "live review receives the current local model response rather than unavailable fallback",
+      "pass": true
+    },
+    {
+      "name": "requirements remain beside unverified suggested quotes and full saved seller context",
+      "pass": true
+    },
+    {
+      "name": "explicit acknowledgement required before review confirmation",
+      "pass": true
+    },
+    {
+      "name": "editing an unconfirmed draft disables an enabled buyer confirmation",
+      "pass": true
+    },
+    {
+      "name": "confirmation restores keyboard focus to its heading",
+      "pass": true
+    },
+    {
+      "name": "sandbox checkout is visibly disabled without configuration",
+      "pass": true
+    },
+    {
+      "name": "review persists after refresh",
+      "pass": true
+    },
+    {
+      "name": "editing requirements requires a new review before further approval",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "merchant edit visibly invalidates reviewed version",
+      "pass": true
+    },
+    {
+      "name": "changed listing requires a fresh unconfirmed review snapshot",
+      "pass": true
+    },
+    {
+      "name": "buyer explicitly approves the fresh version before disabled checkout",
+      "pass": true
+    },
+    {
+      "name": "back/navigation returns a working catalogue",
+      "pass": true
+    },
+    {
+      "name": "browser forward restores the saved review and shop link still works",
+      "pass": true
+    },
+    {
+      "name": "disabled checkout makes no order creation or provider action request",
+      "pass": true
+    },
+    {
+      "name": "console health",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\01-catalogue-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\02-requirements-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\03-evidence-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\04-evidence-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\05-stale-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\07-fresh-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\08-fresh-approval-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL\\06-catalogue-mobile.png"
+  ],
+  "screenshotStates": [
+    {
+      "file": "01-catalogue-desktop.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "02-requirements-desktop.png",
+      "focus": "requirement-3",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "03-evidence-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "04-evidence-mobile.png",
+      "focus": "requirement-1",
+      "scrollY": 10,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "05-stale-review-desktop.png",
+      "focus": "BODY",
+      "scrollY": 643,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "07-fresh-review-desktop.png",
+      "focus": "evidence-heading",
+      "scrollY": 643,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "08-fresh-approval-desktop.png",
+      "focus": "approval-heading",
+      "scrollY": 645,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    },
+    {
+      "file": "06-catalogue-mobile.png",
+      "focus": "BODY",
+      "scrollY": 0,
+      "skipFocused": false,
+      "skipRect": {
+        "top": -80,
+        "bottom": -36
+      },
+      "capturedScrollY": 0
+    }
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> suggested seller quotes and neutral questions -> saved full seller context -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review -> fresh review and approval",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": false,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/d9a7cfcd-b9ca-474b-a0ef-311fa4135ad2/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/d9a7cfcd-b9ca-474b-a0ef-311fa4135ad2"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/merchant/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/d9a7cfcd-b9ca-474b-a0ef-311fa4135ad2"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/a8c8cbf3-eb72-47c7-bdd9-4c51eaa8c7a0/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/a8c8cbf3-eb72-47c7-bdd9-4c51eaa8c7a0"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    }
+  ],
+  "artifactDirectory": "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\v4\\runs\\2026-10-10T02-39-13-207Z-ACTUAL",
+  "frozenModelContract": {
+    "version": "2026-10-10-v4",
+    "moduleSha256": "77a7c8d011b40a162fbff34472f6ed5cceb19b57612c2f5dee98e79742b20c42",
+    "frozenAt": "2026-10-10T02:37:56.621Z"
+  },
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4322",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "review": {
+    "id": "d9a7cfcd-b9ca-474b-a0ef-311fa4135ad2",
+    "version": 1,
+    "model": "qwen3.5:4b-q4_K_M",
+    "evidenceVersion": "2026-10-10-v4",
+    "durationMs": 4683,
+    "kind": "quote-suggestions",
+    "sourceDigest": "ff3849249ef5357f8abe4c391234f3e07354d46cab5d9a8a99a027a29ef33756",
+    "sourceSpans": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 70,
+        "text": "Orbit Courier is the original 1998 first edition wind-up tin explorer.",
+        "eligible": true
+      },
+      {
+        "id": "s2",
+        "start": 71,
+        "end": 133,
+        "text": "The original box, printed manual and winding key are included.",
+        "eligible": true
+      },
+      {
+        "id": "s3",
+        "start": 134,
+        "end": 186,
+        "text": "All four interchangeable antenna pieces are present.",
+        "eligible": true
+      },
+      {
+        "id": "s4",
+        "start": 187,
+        "end": 272,
+        "text": "The box has a softened corner and the figure has a small paint chip on its left boot.",
+        "eligible": true
+      },
+      {
+        "id": "s5",
+        "start": 273,
+        "end": 326,
+        "text": "The seller has not independently verified its origin.",
+        "eligible": true
+      }
+    ],
+    "results": [
+      {
+        "requirement": "original edition",
+        "suggestions": [
+          {
+            "spanId": "s1",
+            "quote": "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "Selected IDs passed source integrity checks only. Relevance and completeness are unverified; read the full listing and decide yourself."
+      },
+      {
+        "requirement": "complete contents",
+        "suggestions": [
+          {
+            "spanId": "s2",
+            "quote": "The original box, printed manual and winding key are included."
+          },
+          {
+            "spanId": "s3",
+            "quote": "All four interchangeable antenna pieces are present."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_clarify",
+            "text": "What would you like the merchant to clarify about this requirement?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "Selected IDs passed source integrity checks only. Relevance and completeness are unverified; read the full listing and decide yourself."
+      },
+      {
+        "requirement": "original box",
+        "suggestions": [
+          {
+            "spanId": "s2",
+            "quote": "The original box, printed manual and winding key are included."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_clarify",
+            "text": "What would you like the merchant to clarify about this requirement?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "Selected IDs passed source integrity checks only. Relevance and completeness are unverified; read the full listing and decide yourself."
+      }
+    ]
+  },
+  "merchantEdited": {
+    "version": 2,
+    "priceCents": 4900,
+    "currency": "USD"
+  },
+  "staleReview": {
+    "id": "d9a7cfcd-b9ca-474b-a0ef-311fa4135ad2",
+    "version": 1,
+    "priceCents": 4800,
+    "stale": true
+  },
+  "merchantEdit": "Opt-in --merchant-edit changed the synthetic listing and incremented its server version; original text/price are recorded below for reset.",
+  "merchantOriginal": {
+    "description": "Orbit Courier is the original 1998 first edition wind-up tin explorer. The original box, printed manual and winding key are included. All four interchangeable antenna pieces are present. The box has a softened corner and the figure has a small paint chip on its left boot. The seller has not independently verified its origin.",
+    "price": "48.00"
+  },
+  "rereview": {
+    "id": "a8c8cbf3-eb72-47c7-bdd9-4c51eaa8c7a0",
+    "version": 2,
+    "priceCents": 4900,
+    "model": "qwen3.5:4b-q4_K_M",
+    "evidenceVersion": "2026-10-10-v4",
+    "durationMs": 2145,
+    "kind": "quote-suggestions",
+    "sourceDigest": "14edd803f71510b1b1b9bf1f16acc7846c48992b98223c60e3f041846f349ed5",
+    "sourceSpans": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 70,
+        "text": "Orbit Courier is the original 1998 first edition wind-up tin explorer.",
+        "eligible": true
+      },
+      {
+        "id": "s2",
+        "start": 71,
+        "end": 133,
+        "text": "The original box, printed manual and winding key are included.",
+        "eligible": true
+      },
+      {
+        "id": "s3",
+        "start": 134,
+        "end": 186,
+        "text": "All four interchangeable antenna pieces are present.",
+        "eligible": true
+      },
+      {
+        "id": "s4",
+        "start": 187,
+        "end": 272,
+        "text": "The box has a softened corner and the figure has a small paint chip on its left boot.",
+        "eligible": true
+      },
+      {
+        "id": "s5",
+        "start": 273,
+        "end": 326,
+        "text": "The seller has not independently verified its origin.",
+        "eligible": true
+      },
+      {
+        "id": "s6",
+        "start": 327,
+        "end": 363,
+        "text": "Controlled browser QA merchant edit.",
+        "eligible": true
+      }
+    ],
+    "results": [
+      {
+        "requirement": "original edition",
+        "suggestions": [
+          {
+            "spanId": "s1",
+            "quote": "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_scope",
+            "text": "Does the quoted text refer to the exact component or variant you mean?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "Selected IDs passed source integrity checks only. Relevance and completeness are unverified; read the full listing and decide yourself."
+      },
+      {
+        "requirement": "complete contents",
+        "suggestions": [
+          {
+            "spanId": "s2",
+            "quote": "The original box, printed manual and winding key are included."
+          },
+          {
+            "spanId": "s3",
+            "quote": "All four interchangeable antenna pieces are present."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_clarify",
+            "text": "What would you like the merchant to clarify about this requirement?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "Selected IDs passed source integrity checks only. Relevance and completeness are unverified; read the full listing and decide yourself."
+      },
+      {
+        "requirement": "original box",
+        "suggestions": [
+          {
+            "spanId": "s2",
+            "quote": "The original box, printed manual and winding key are included."
+          }
+        ],
+        "questions": [
+          {
+            "id": "q_clarify",
+            "text": "What would you like the merchant to clarify about this requirement?"
+          }
+        ],
+        "validation": "valid",
+        "reason": "Selected IDs passed source integrity checks only. Relevance and completeness are unverified; read the full listing and decide yourself."
+      }
+    ],
+    "confirmedAt": "2026-10-10T02:39:23.506Z"
+  },
+  "finishedAt": "2026-10-10T02:39:24.804Z"
+}

@@ -1,0 +1,132 @@
+{
+  "method": "Static declared-color pair calculation only; not computed DOM styles or rendered QA",
+  "normalTextThreshold": 4.5,
+  "checks": [
+    {
+      "selector": "body",
+      "foreground": "#242b28",
+      "background": "#ffffff",
+      "ratio": 14.471,
+      "passesNormalText": true
+    },
+    {
+      "selector": "muted",
+      "foreground": "#626c66",
+      "background": "#ffffff",
+      "ratio": 5.446,
+      "passesNormalText": true
+    },
+    {
+      "selector": "intro-note",
+      "foreground": "#748078",
+      "background": "#ffffff",
+      "ratio": 4.116,
+      "passesNormalText": false
+    },
+    {
+      "selector": "step-number",
+      "foreground": "#65776b",
+      "background": "#ffffff",
+      "ratio": 4.768,
+      "passesNormalText": true
+    },
+    {
+      "selector": "art-caption",
+      "foreground": "#68766d",
+      "background": "#ffffff",
+      "ratio": 4.772,
+      "passesNormalText": true
+    },
+    {
+      "selector": "quiet-label",
+      "foreground": "#66756b",
+      "background": "#ffffff",
+      "ratio": 4.859,
+      "passesNormalText": true
+    },
+    {
+      "selector": "fine-print",
+      "foreground": "#657269",
+      "background": "#ffffff",
+      "ratio": 5.043,
+      "passesNormalText": true
+    },
+    {
+      "selector": "review-empty",
+      "foreground": "#78877d",
+      "background": "#ffffff",
+      "ratio": 3.777,
+      "passesNormalText": false
+    },
+    {
+      "selector": "seller-warning",
+      "foreground": "#57685d",
+      "background": "#ffffff",
+      "ratio": 5.926,
+      "passesNormalText": true
+    },
+    {
+      "selector": "source-quote",
+      "foreground": "#35433a",
+      "background": "#ffffff",
+      "ratio": 10.42,
+      "passesNormalText": true
+    },
+    {
+      "selector": "validation-note",
+      "foreground": "#627267",
+      "background": "#ffffff",
+      "ratio": 5.094,
+      "passesNormalText": true
+    },
+    {
+      "selector": "unknown",
+      "foreground": "#78551b",
+      "background": "#f8f1e3",
+      "ratio": 6,
+      "passesNormalText": true
+    },
+    {
+      "selector": "match",
+      "foreground": "#1d6244",
+      "background": "#eaf3ed",
+      "ratio": 6.432,
+      "passesNormalText": true
+    },
+    {
+      "selector": "contradiction",
+      "foreground": "#973e30",
+      "background": "#fbefeb",
+      "ratio": 6.119,
+      "passesNormalText": true
+    },
+    {
+      "selector": "checkout-note",
+      "foreground": "#78602c",
+      "background": "#faf5e9",
+      "ratio": 5.502,
+      "passesNormalText": true
+    },
+    {
+      "selector": "error-body",
+      "foreground": "#874838",
+      "background": "#fcf1ed",
+      "ratio": 6.285,
+      "passesNormalText": true
+    },
+    {
+      "selector": "paypal-button",
+      "foreground": "#153f6a",
+      "background": "#f6d46f",
+      "ratio": 7.466,
+      "passesNormalText": true
+    },
+    {
+      "selector": "primary-button",
+      "foreground": "#ffffff",
+      "background": "#153f35",
+      "ratio": 11.704,
+      "passesNormalText": true
+    }
+  ]
+}

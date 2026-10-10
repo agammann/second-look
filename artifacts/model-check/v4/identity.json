@@ -1,0 +1,44 @@
+{
+  "version": "2026-10-10-v4",
+  "model": "qwen3.5:4b-q4_K_M",
+  "frozenAt": "2026-10-10T02:37:56.621Z",
+  "moduleSha256": "77a7c8d011b40a162fbff34472f6ed5cceb19b57612c2f5dee98e79742b20c42",
+  "validatorSha256": "77a7c8d011b40a162fbff34472f6ed5cceb19b57612c2f5dee98e79742b20c42",
+  "promptSha256": "c7ad604f29f07a66e56ace0a1c5d9ff4d2cbff4d2aabc2314e1139818de2e43a",
+  "schemaSha256": "f2c2a89da8fdf32eaa0115e5acf0765d66f89f05e8dd13c7efcb5761b81b2e5c",
+  "questionCatalogueSha256": "8b7d6420d0453afa90fedf9e8b4e9123f4e063e1e16a378d23b7ae8017d81d9c",
+  "requestSchemaSha256": [
+    {
+      "requirements": 1,
+      "sha256": "f6fe0d15ac1f5df5b22460f75337d388b8bf95e36f873db6f3fd072f364d9184"
+    },
+    {
+      "requirements": 2,
+      "sha256": "81c8ca0199bb06483b9c00434111338ecc3553c407fca9d14b91bcac8c717203"
+    },
+    {
+      "requirements": 3,
+      "sha256": "3f1a0b5d4cff0b803f1807bea9fc95e77c75449007b9307d1e11400b3c1f76d0"
+    }
+  ],
+  "limits": {
+    "description": 2400,
+    "requirements": 3,
+    "requirement": 160,
+    "spans": 32,
+    "suggestions": 6,
+    "questions": 2,
+    "responseBytes": 32768,
+    "content": 8192,
+    "context": 4096,
+    "outputTokens": 600
+  },
+  "mockedTests": {
+    "currentV4Engine": 15,
+    "historicalV3Engine": 20,
+    "historicalV3Runner": 8,
+    "completeSuite": 154
+  },
+  "note": "Frozen before all v4 live inference and before independently authored v4 cases are revealed. V3 six-case exposed regressions will run once against this same immutable revision. Historical source, inputs, raw results and delivery archives remain preserved.",
+  "policy": "One bounded Qwen call selects up to six exact immutable source IDs and fixed optional neutral question IDs. Prompt targets explicit requested aspects and qualifiers with empty selection when unstated. Mechanical checks do not establish semantic relevance, completeness, authenticity, truth or approval. Full seller text and independent human acknowledgement remain required. No lexical semantic classifier, buying verdicts, new tool actions or payment changes."
+}

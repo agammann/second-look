@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-10T02:41:23.218Z",
+  "ownedOllamaSessionId": 13905,
+  "ownedOllamaStopped": true,
+  "modelsUnloadedBeforeStop": true,
+  "modelsResidentAfter": [],
+  "ownedBrowserServerStopped": true,
+  "ownedBrowserDataRemoved": true,
+  "emptyTemporaryParentRemoved": true,
+  "endpoints": [
+    {
+      "url": "http://127.0.0.1:11434/api/ps",
+      "code": "ECONNREFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:4322/api/config",
+      "code": "ECONNREFUSED"
+    }
+  ],
+  "realPayPalProviderCalls": 0,
+  "paypalCredentialsRead": false,
+  "weightsAndPriorBenchmarksPreserved": true,
+  "dockerAndLoginStartupUnchanged": true
+}

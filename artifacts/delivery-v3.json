@@ -1,0 +1,84 @@
+{
+  "createdAt": "2026-10-10T02:08:46.403Z",
+  "archiveBytes": 26987377,
+  "archiveSha256": "4d4e5452deb059cc6d1743e182a668c19d836209d2f36c3a6a1f7f7f6022d756",
+  "entryCount": 305,
+  "archiveRequiredEntriesVerified": true,
+  "packagedFrozenV1V2V3AndCurrentModuleVerified": true,
+  "excludesCredentialsLocalStateRuntimesWeightsAndOldZip": true,
+  "previousArchiveSha256": "c3557f6201d658c9cef335130b3aae9cd339120abd144ebe7df1e1f3d8b06a07",
+  "previousArchivePreservedAt": "deliveries/v2/second-look-prototype.zip",
+  "evidenceVersion": "2026-10-10-v3",
+  "finalDeterministicTests": {
+    "pass": 139,
+    "total": 139,
+    "current": 64,
+    "historical": 75
+  },
+  "actualHttp": {
+    "pass": 5,
+    "total": 5
+  },
+  "actualBrowser": {
+    "pass": 24,
+    "total": 24,
+    "sandboxEnabled": true,
+    "actualModelReviews": 2
+  },
+  "mockBrowser": {
+    "pass": 40,
+    "total": 40
+  },
+  "freshIndependent": {
+    "actualCases": 6,
+    "requirements": 8,
+    "sourceIntegrityRows": "8/8",
+    "exactSuggestions": "14/14",
+    "humanAdequateCases": "3/6",
+    "partialCases": [
+      1,
+      4
+    ],
+    "irrelevantRowsCase6": 3,
+    "neutralQuestions": "8/8",
+    "questionQuality": "Mostly weak/generic",
+    "noTuningOrRerun": true,
+    "raw": "artifacts/model-check/independent-quote-v3-first.json",
+    "independentAudit": "artifacts/model-check/v3/SOURCE-AUDIT.md",
+    "provenanceLimit": "Minimal first-run harness did not capture a new pre-run model manifest digest/quantization; fixed model name/full responses retained and prior identity remains preserved."
+  },
+  "cleanup": {
+    "ownedServicesStopped": true,
+    "ownedQwenUnloaded": true,
+    "weightsAndPriorBenchmarksPreserved": true,
+    "record": "artifacts/session-cleanup-v3.json"
+  },
+  "readiness": "Local build and browser validated; retrieval limits and unverified real PayPal sandbox prevent readiness claim. No external submission.",
+  "sourceSanitization": {
+    "status": "sanitized public copy",
+    "source": "artifacts/delivery-v3.json",
+    "scope": "Local absolute paths and Library identifiers removed. Verified historical counts, hashes and test results preserved.",
+    "removedFields": [
+      {
+        "field": "archivePath",
+        "reason": "local path or attachment reference"
+      },
+      {
+        "field": "library",
+        "reason": "local Library reference"
+      },
+      {
+        "field": "actualCatalogueLibrary",
+        "reason": "local Library reference"
+      },
+      {
+        "field": "actualQuotePanelLibrary",
+        "reason": "local Library reference"
+      },
+      {
+        "field": "libraryRoute",
+        "reason": "local Library reference"
+      }
+    ]
+  }
+}

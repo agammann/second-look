@@ -1,0 +1,357 @@
+{
+  "startedAt": "2026-10-10T00:18:58.630Z",
+  "engine": "Existing Playwright / Chromium, headless interactive automation",
+  "browserPlugin": "Absent: Browser skill is not listed",
+  "cuaFailure": "MXC launcher cannot locate required Windows platform directory: HRESULT 0x80070003; one attempt, no retry",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "page identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful catalogue and six original synthetic listings",
+      "pass": true
+    },
+    {
+      "name": "no framework error overlay",
+      "pass": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "keyboard skip link",
+      "pass": true
+    },
+    {
+      "name": "listing retains seller statement disclaimer and server-owned price",
+      "pass": true
+    },
+    {
+      "name": "loading disables repeated review submission",
+      "pass": true
+    },
+    {
+      "name": "repeated click produced one review request",
+      "pass": true
+    },
+    {
+      "name": "requirements remain beside visible status and exact source quotes",
+      "pass": true
+    },
+    {
+      "name": "explicit acknowledgement required before review confirmation",
+      "pass": true
+    },
+    {
+      "name": "confirmation restores keyboard focus to its heading",
+      "pass": true
+    },
+    {
+      "name": "sandbox checkout is visibly disabled without configuration",
+      "pass": true
+    },
+    {
+      "name": "review persists after refresh",
+      "pass": true
+    },
+    {
+      "name": "editing requirements requires a new review before further approval",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "merchant edit visibly invalidates reviewed version",
+      "pass": true
+    },
+    {
+      "name": "changed listing requires a fresh unconfirmed review snapshot",
+      "pass": true
+    },
+    {
+      "name": "buyer explicitly approves the fresh version before disabled checkout",
+      "pass": true
+    },
+    {
+      "name": "back/navigation returns a working catalogue",
+      "pass": true
+    },
+    {
+      "name": "MOCK match, contradiction and unknown cards use visible status words",
+      "pass": true
+    },
+    {
+      "name": "MOCK invalid output visibly fails closed to unknown",
+      "pass": true
+    },
+    {
+      "name": "MOCK receipt pending does not claim a completed capture",
+      "pass": true
+    },
+    {
+      "name": "MOCK receipt ambiguous does not claim a completed capture",
+      "pass": true
+    },
+    {
+      "name": "MOCK receipt failed does not claim a completed capture",
+      "pass": true
+    },
+    {
+      "name": "MOCK receipt cancelled does not claim a completed capture",
+      "pass": true
+    },
+    {
+      "name": "MOCK explicit local cancellation records cancelled, never paid",
+      "pass": true
+    },
+    {
+      "name": "disabled checkout makes no order creation or provider action request",
+      "pass": true
+    },
+    {
+      "name": "console health",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-01-catalogue-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-02-requirements-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-03-evidence-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-04-evidence-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-05-stale-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-07-fresh-review-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-08-fresh-approval-desktop.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-06-catalogue-mobile.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-evidence-three-statuses.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-evidence-invalid.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-receipt-pending.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-receipt-ambiguous.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-receipt-failed.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-receipt-cancelled.png",
+    "Z:\\Codex\\2026-10-09\\task-4\\artifacts\\browser\\MOCK-cancel-action.png"
+  ],
+  "flow": "catalogue -> listing -> up to three requirements -> seller evidence -> explicit review -> disabled sandbox checkout -> controlled merchant edit -> stale review -> fresh review and approval",
+  "scope": "Local synthetic listings only; no payment, account or credential actions",
+  "mockUI": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/mock-review-1/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/orbit-courier"
+    },
+    {
+      "method": "POST",
+      "path": "/api/merchant/listings/orbit-courier"
+    },
+    {
+      "method": "GET",
+      "path": "/api/reviews/mock-review-1"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews/mock-review-2/confirm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/listings/atlas-station"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "POST",
+      "path": "/api/reviews"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-pending"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-ambiguous"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-cancelled"
+    },
+    {
+      "method": "GET",
+      "path": "/api/config"
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/mock-awaiting_approval"
+    },
+    {
+      "method": "POST",
+      "path": "/api/orders/mock-awaiting_approval/cancel"
+    }
+  ],
+  "browser": "151.0.7922.34",
+  "url": "http://127.0.0.1:4310",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "review": {
+    "id": "mock-review-1",
+    "version": 1,
+    "model": "MOCK UI FIXTURE — no model call",
+    "results": [
+      {
+        "requirement": "original edition",
+        "status": "match",
+        "quotes": [
+          "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture; not a live evidence evaluation."
+      },
+      {
+        "requirement": "all four antenna pieces",
+        "status": "match",
+        "quotes": [
+          "All four interchangeable antenna pieces are present."
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture; not a live evidence evaluation."
+      },
+      {
+        "requirement": "manufacturer warranty",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "valid",
+        "reason": "MOCK unknown fixture; this requirement is not stated."
+      }
+    ]
+  },
+  "merchantEdited": {
+    "version": 2,
+    "priceCents": 4900,
+    "currency": "USD"
+  },
+  "merchantEdit": "MOCK browser-only merchant edit incremented the fixture version. No server listing was changed.",
+  "merchantOriginal": {
+    "description": "Orbit Courier is the original 1998 first edition wind-up tin explorer. The original box, printed manual and winding key are included. All four interchangeable antenna pieces are present. The box has a softened corner and the figure has a small paint chip on its left boot. The seller has not independently verified its origin.",
+    "price": "48.00"
+  },
+  "rereview": {
+    "id": "mock-review-2",
+    "version": 2,
+    "priceCents": 4900,
+    "model": "MOCK UI FIXTURE — no model call",
+    "results": [
+      {
+        "requirement": "original edition",
+        "status": "match",
+        "quotes": [
+          "Orbit Courier is the original 1998 first edition wind-up tin explorer."
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture; not a live evidence evaluation."
+      },
+      {
+        "requirement": "all four antenna pieces",
+        "status": "match",
+        "quotes": [
+          "All four interchangeable antenna pieces are present."
+        ],
+        "validation": "valid",
+        "reason": "MOCK visual fixture; not a live evidence evaluation."
+      },
+      {
+        "requirement": "manufacturer warranty",
+        "status": "unknown",
+        "quotes": [],
+        "validation": "valid",
+        "reason": "MOCK unknown fixture; this requirement is not stated."
+      }
+    ],
+    "confirmedAt": "2026-10-10T00:19:00.466Z"
+  },
+  "finishedAt": "2026-10-10T00:19:02.957Z"
+}

@@ -1,0 +1,9 @@
+{
+  "startedAt": "2026-10-09T23:50:24.264Z",
+  "kind": "Actual loopback HTTP smoke in initial restricted execution context; no PayPal or model call",
+  "pass": false,
+  "checks": [],
+  "error": {"message": "fetch failed", "code": "EACCES"},
+  "finishedAt": "2026-10-09T23:50:24.309Z",
+  "note": "Preserved initial result. A later parent-authorized, narrowly reviewed execution succeeded; see http-live.json."
+}

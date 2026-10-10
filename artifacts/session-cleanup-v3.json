@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-10-10T02:01:25.270Z",
+  "ownedOllamaSession": 1274,
+  "preStopResidentModels": [],
+  "unloadedAfterFreshSix": true,
+  "unloadedAfterBrowser": true,
+  "stoppedOwnedForegroundRuntime": true,
+  "stopMethod": "Ctrl-C of the owned tool session; interrupt exit expected",
+  "browserHelperStopped": true,
+  "retainedModelWeights": true,
+  "previousBenchmarksModified": false,
+  "localDemoDataPreserved": true,
+  "realPayPalProviderCalls": 0,
+  "paypalCredentialsRead": false,
+  "endpointStopped": true,
+  "verificationCode": "ECONNREFUSED"
+}

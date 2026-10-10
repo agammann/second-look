@@ -1,0 +1,235 @@
+{
+  "dataset": "parent-independent-holdout-v2",
+  "purpose": "fresh-holdout",
+  "frozenAt": "2026-10-10T00:47:31.348Z",
+  "inputProvenance": "Exact eight parent buyer/listing/expected strings received only after v2 implementation/prompt freeze. Each full buyer statement is one requirement; no text normalization, truncation or attribute mapping. Gold quote criteria declared before the first and only model run. Expectations and gold quotes are not sent to the model.",
+  "implementationFreeze": {
+    "version": "2026-10-10-v2",
+    "model": "qwen3.5:4b-q4_K_M",
+    "frozenAt": "2026-10-10T00:41:03.744Z",
+    "moduleSha256": "d2ad00dc76479635e6ec9b7e39a80bbcee346fa1145da433de07d5b9f33d10e9",
+    "validatorSha256": "d2ad00dc76479635e6ec9b7e39a80bbcee346fa1145da433de07d5b9f33d10e9",
+    "promptSha256": "56451c8583a148690e9731c027eab3e48e10f3972118a767e7bea2679028eec6",
+    "schemaSha256": "fb03d65f0230bef9cb0fc23eff6bcc4bd6a726808025a06e3f80817447826b6a",
+    "requestSchemaSha256": [
+      {
+        "requirements": 1,
+        "sha256": "8ba22af9110f3a3d9f9b318c1982a51f84f67556f2d91785b8fe948d93824870"
+      },
+      {
+        "requirements": 2,
+        "sha256": "f712b5ca15db43e6fa14f9cef79c5e63399762ffbb318848b26490d329f85b52"
+      },
+      {
+        "requirements": 3,
+        "sha256": "1d91f467a31016888f53b7ea2d2ac1dc7f4d8d6c36a14ffaaf7e0dc181118596"
+      }
+    ],
+    "mockedTests": {
+      "currentV2": 22,
+      "preservedHistoricalV1": 50,
+      "runnerControlFlow": 3
+    },
+    "note": "Frozen after general source-audit and development regressions, before any v2 model request or exposure to the new parent independent set. V1 source, original input fixture and first raw reports remain preserved.",
+    "policy": "Unknown may retain exact eligible relevant context; valid means quote integrity only. Unsupported known proposals remain visible as withheld conclusions. Instruction-governed spans and general decision claims are excluded with a bounded notice. Conservative bounded English guards are not a semantic proof or authentication."
+  },
+  "parentProvided": [
+    {
+      "buyer": "I want the 2001 first printing, with the map included.",
+      "listing": "North Pier adventure book. First printing, 2001. The fold-out map was lost.",
+      "expected": "contradiction"
+    },
+    {
+      "buyer": "I want a reproduction, not an expensive original.",
+      "listing": "Newly manufactured replica of the 1970 Signal Bell badge. No vintage item is included.",
+      "expected": "match"
+    },
+    {
+      "buyer": "The clock must keep time.",
+      "listing": "Cloudwatch desk clock. The hands move when wound; timekeeping accuracy has not been checked.",
+      "expected": "unknown"
+    },
+    {
+      "buyer": "No markings on the pages.",
+      "listing": "The cover has an owner's name. All interior pages are clean, without writing or highlighting.",
+      "expected": "match"
+    },
+    {
+      "buyer": "The original charger needs to be included.",
+      "listing": "Pocket Beacon toy. The original charger is shown in the last photo for comparison only. A generic charger ships with the toy.",
+      "expected": "contradiction"
+    },
+    {
+      "buyer": "The set needs all eight figures.",
+      "listing": "Eight-figure Cedar Crew set. Seven figures are original; the eighth is a modern replacement. All eight are included.",
+      "expected": "match"
+    },
+    {
+      "buyer": "I need an unopened package.",
+      "listing": "The shipping carton was opened for photography. The manufacturer's retail package remains factory sealed and unopened.",
+      "expected": "match"
+    },
+    {
+      "buyer": "The piece must be signed by its creator.",
+      "listing": "A name appears on the underside. The seller cannot identify whose name it is.",
+      "expected": "unknown"
+    }
+  ],
+  "cases": [
+    {
+      "id": "fresh-v2-01",
+      "buyer": "I want the 2001 first printing, with the map included.",
+      "listing": "North Pier adventure book. First printing, 2001. The fold-out map was lost.",
+      "expectedLabel": "contradiction",
+      "description": "North Pier adventure book. First printing, 2001. The fold-out map was lost.",
+      "requirements": [
+        "I want the 2001 first printing, with the map included."
+      ],
+      "expected": [
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "The fold-out map was lost.",
+            "First printing, 2001. The fold-out map was lost."
+          ],
+          "note": "The missing map contradicts its required inclusion. Year/printing are explicitly stated; they do not resolve the missing map."
+        }
+      ]
+    },
+    {
+      "id": "fresh-v2-02",
+      "buyer": "I want a reproduction, not an expensive original.",
+      "listing": "Newly manufactured replica of the 1970 Signal Bell badge. No vintage item is included.",
+      "expectedLabel": "match",
+      "description": "Newly manufactured replica of the 1970 Signal Bell badge. No vintage item is included.",
+      "requirements": [
+        "I want a reproduction, not an expensive original."
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "Newly manufactured replica of the 1970 Signal Bell badge.",
+            "Newly manufactured replica of the 1970 Signal Bell badge. No vintage item is included."
+          ],
+          "note": "Newly manufactured replica supports reproduction; an original is explicitly not included. Expensive is a buyer preference without a monetary limit, not a model price calculation or pricing advice."
+        }
+      ]
+    },
+    {
+      "id": "fresh-v2-03",
+      "buyer": "The clock must keep time.",
+      "listing": "Cloudwatch desk clock. The hands move when wound; timekeeping accuracy has not been checked.",
+      "expectedLabel": "unknown",
+      "description": "Cloudwatch desk clock. The hands move when wound; timekeeping accuracy has not been checked.",
+      "requirements": [
+        "The clock must keep time."
+      ],
+      "expected": [
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "Moving hands do not establish timekeeping accuracy. Not checked is useful unknown context, never broken. V2 may preserve exact eligible relevant context."
+        }
+      ]
+    },
+    {
+      "id": "fresh-v2-04",
+      "buyer": "No markings on the pages.",
+      "listing": "The cover has an owner's name. All interior pages are clean, without writing or highlighting.",
+      "expectedLabel": "match",
+      "description": "The cover has an owner's name. All interior pages are clean, without writing or highlighting.",
+      "requirements": [
+        "No markings on the pages."
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "All interior pages are clean, without writing or highlighting.",
+            "The cover has an owner's name. All interior pages are clean, without writing or highlighting."
+          ],
+          "note": "Buyer asks about pages, not the cover. Known support must include the whole interior-pages sentence; cover-only text is inadequate."
+        }
+      ]
+    },
+    {
+      "id": "fresh-v2-05",
+      "buyer": "The original charger needs to be included.",
+      "listing": "Pocket Beacon toy. The original charger is shown in the last photo for comparison only. A generic charger ships with the toy.",
+      "expectedLabel": "contradiction",
+      "description": "Pocket Beacon toy. The original charger is shown in the last photo for comparison only. A generic charger ships with the toy.",
+      "requirements": [
+        "The original charger needs to be included."
+      ],
+      "expected": [
+        {
+          "status": "contradiction",
+          "acceptableQuotes": [
+            "The original charger is shown in the last photo for comparison only.",
+            "A generic charger ships with the toy.",
+            "The original charger is shown in the last photo for comparison only. A generic charger ships with the toy."
+          ],
+          "note": "Comparison-only original charger and shipped generic charger explicitly distinguish displayed vs supplied charger. Audit the quote set for this relationship; no image is inspected or used as evidence."
+        }
+      ]
+    },
+    {
+      "id": "fresh-v2-06",
+      "buyer": "The set needs all eight figures.",
+      "listing": "Eight-figure Cedar Crew set. Seven figures are original; the eighth is a modern replacement. All eight are included.",
+      "expectedLabel": "match",
+      "description": "Eight-figure Cedar Crew set. Seven figures are original; the eighth is a modern replacement. All eight are included.",
+      "requirements": [
+        "The set needs all eight figures."
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "All eight are included.",
+            "Eight-figure Cedar Crew set. Seven figures are original; the eighth is a modern replacement. All eight are included."
+          ],
+          "note": "All eight figures are required, with no originality requirement. One replacement does not contradict inclusion. The quantity sentence must be interpreted with the set identity; replacement-only text is inadequate."
+        }
+      ]
+    },
+    {
+      "id": "fresh-v2-07",
+      "buyer": "I need an unopened package.",
+      "listing": "The shipping carton was opened for photography. The manufacturer's retail package remains factory sealed and unopened.",
+      "expectedLabel": "match",
+      "description": "The shipping carton was opened for photography. The manufacturer's retail package remains factory sealed and unopened.",
+      "requirements": [
+        "I need an unopened package."
+      ],
+      "expected": [
+        {
+          "status": "match",
+          "acceptableQuotes": [
+            "The manufacturer's retail package remains factory sealed and unopened.",
+            "The shipping carton was opened for photography. The manufacturer's retail package remains factory sealed and unopened."
+          ],
+          "note": "Unopened concerns the retail package; shipping-carton opening does not change retail-package condition. Support must include the retail-package sentence. Preserve any ambiguity in buyer package terminology explicitly."
+        }
+      ]
+    },
+    {
+      "id": "fresh-v2-08",
+      "buyer": "The piece must be signed by its creator.",
+      "listing": "A name appears on the underside. The seller cannot identify whose name it is.",
+      "expectedLabel": "unknown",
+      "description": "A name appears on the underside. The seller cannot identify whose name it is.",
+      "requirements": [
+        "The piece must be signed by its creator."
+      ],
+      "expected": [
+        {
+          "status": "unknown",
+          "acceptableQuotes": [],
+          "note": "An unidentified name does not establish creator signature. V2 may preserve exact eligible relevant context; it remains Unknown."
+        }
+      ]
+    }
+  ]
+}
