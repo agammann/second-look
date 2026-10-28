@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { join, resolve } from 'node:path';
+import path, { join } from 'node:path';
 import { createHash, randomUUID } from 'node:crypto';
 import { createStore } from '../lib/store.mjs';
 import { createService, inspectPayPalOrder } from '../lib/service.mjs';
@@ -80,6 +80,28 @@ async function ordered(context) {
   return { review, order };
 }
 const rejectsCode = (operation, code) => assert.rejects(operation, (error) => error.code === code);
+
+function isStrictDescendant(directory, root, paths = path) {
+  const relative = paths.relative(paths.resolve(root), paths.resolve(directory));
+  return relative !== '' && relative !== '..' && !relative.startsWith(`..${paths.sep}`) && !paths.isAbsolute(relative);
+}
+
+for (const [platform, paths, root] of [
+  ['POSIX', path.posix, '/tmp'],
+  ['Windows', path.win32, 'C:\\Temp'],
+]) {
+  test(`temporary directory containment rejects root, siblings and outside paths on ${platform}`, () => {
+    assert.equal(isStrictDescendant(paths.join(root, 'second-look-payment-test-123'), root, paths), true);
+    assert.equal(isStrictDescendant(paths.join(root, 'nested', 'child'), root, paths), true);
+    assert.equal(isStrictDescendant(paths.join(root, '..notes'), root, paths), true);
+    assert.equal(isStrictDescendant(root, root, paths), false);
+    assert.equal(isStrictDescendant(paths.join(root, 'child', '..'), root, paths), false);
+    assert.equal(isStrictDescendant(`${root}-sibling`, root, paths), false);
+    assert.equal(isStrictDescendant(paths.join(root, '..', 'outside'), root, paths), false);
+    assert.equal(isStrictDescendant(paths.dirname(root), root, paths), false);
+    if (platform === 'Windows') assert.equal(isStrictDescendant('D:\\Temp\\child', root, paths), false);
+  });
+}
 
 test('TEST-ONLY MOCK: disabled adapter prevents checkout and makes no provider calls', async (t) => {
   const context = fixture({ paypal: createPayPal({ origin: 'http://127.0.0.1:4310', fetchImpl: () => { throw new Error('No network expected'); } }) }); t.after(() => context.store.close());
@@ -320,7 +342,7 @@ test('TEST-ONLY MOCK: duplicate provider order and capture IDs are visibly rejec
 
 test('TEST-ONLY MOCK: SQLite preserves quote IDs/questions and receipt snapshots through edit/restart; interrupted capture recovers unknown', async () => {
   const directory = mkdtempSync(join(tmpdir(), 'second-look-payment-test-'));
-  assert.ok(resolve(directory).startsWith(resolve(tmpdir()) + '\\'));
+  assert.ok(isStrictDescendant(directory, tmpdir()));
   try {
     const path = join(directory, 'shop.sqlite'); const paypal = providerMock(); const first = fixture({ path, paypal }); const { review, order } = await ordered(first); paypal.approve(order.paypalOrderId);
     const originalAnalysis = structuredClone(review.analysis);
