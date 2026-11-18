@@ -2,11 +2,11 @@
 
 [Watch the 65-second captioned demo](https://www.youtube.com/watch?v=znVLaGqigrw) · [Public source](https://github.com/agammann/second-look)
 
-A local prototype for one fictional collectible shop. Buyers state up to three requirements; local Qwen suggests exact seller excerpts and neutral questions to help them read the **full saved listing**. Buyers make their own assessment and explicitly acknowledge their review before separately approving a PayPal **sandbox** checkout.
+A local review tool for a fictional collectibles shop. Buyers state up to three requirements. Local Qwen suggests exact seller excerpts and neutral questions to help them read the **full saved listing**. Buyers record their own assessment before separately approving an optional PayPal **sandbox** checkout.
 
 The current v4 flow offers quotations, not Match/Contradiction/Unknown buying verdicts. One bounded Qwen call can select up to six exact source excerpts per complete requirement. `quote-suggestions` validates source IDs and maps them to exact server-owned text. That establishes quotation integrity only. Semantic relevance, completeness, authenticity and truth remain unverified. Important context may be omitted from suggestions and must be evaluated separately in the full listing.
 
-**Status: focused v4 build and actual sandbox checkout tested; local submission materials prepared.** The suite passes 154/154; the historical browser flow passes 24/24 with PayPal disabled, and labeled MOCK rendering passes 43/43. The fresh sibling-authored eight-case run returned eight actual responses: 11/12 rows passed the model contract and all 24 displayed excerpts were exact source spans. Human assessment still found omitted context, excess excerpts and generic questions; one empty selection used an invalid question combination and was visibly withheld. This small sample does not establish reliable retrieval. The authorized continuation completed two $48.00 USD/v1 sandbox captures using a generated fictitious buyer, including a fresh order for the working demo. A separate cancellation remained uncaptured. An isolated official provider simulation returned HTTP 422 `INSTRUMENT_DECLINED`; the app retained ambiguity with no capture and GET-only reconciliation. Return/cancel callbacks and a pre-approval capture attempt did not bypass provider verification. [Sandbox evidence](artifacts/paypal-sandbox/continuation-evidence.json), [STATUS.md](STATUS.md), [DEMO.md](DEMO.md) and [SUBMISSION.md](SUBMISSION.md) record completed local testing and publication. [Second Look](https://devpost.com/software/second-look-x5nt6q) was submitted to the PayPal AI Hackathon after human confirmation.
+The October 2026 v4 delivery recorded 154 deterministic passes, 24 browser checks with PayPal disabled, and 43 labeled MOCK rendering checks. Eight sibling-authored cases returned eight local model responses. Eleven of twelve rows passed the model contract and all 24 displayed excerpts matched exact source spans. Human assessment still found omitted context, excess excerpts, generic questions, and one invalid selection that was withheld. The same delivery records two $48.00 sandbox captures, an uncaptured cancellation, and a simulated provider decline retained as ambiguous. [Sandbox evidence](artifacts/paypal-sandbox/continuation-evidence.json), [STATUS.md](STATUS.md), [DEMO.md](DEMO.md) and [SUBMISSION.md](SUBMISSION.md) document those checks. [Second Look](https://devpost.com/software/second-look-x5nt6q) was submitted to the PayPal AI Hackathon after human confirmation.
 
 Second Look is an easily renamed working title, not legally or commercially cleared. All six boxed collectibles, descriptions and decorative SVG illustrations are original synthetic demo material. Scope excludes marketplaces, scraping, OCR, image evidence, real payments, authenticity/pricing advice, seller onboarding, escrow, subscriptions and autonomous purchasing.
 
@@ -20,7 +20,7 @@ node --env-file-if-exists=.env server.mjs
 
 Open `http://127.0.0.1:4310`. Use that exact host; `localhost` is intentionally not a second app origin. The server binds only `127.0.0.1`. A user-created local `.env` can set `PORT` from 1024 to 65535. SQLite state and the session-signing key are generated under `.data/`; preserve both for browser sessions and receipts to survive a restart. Neither is served or packaged. This is a single-process demo with no login startup changes.
 
-PayPal is disabled by default. The server references client credentials only when `PAYPAL_SANDBOX_ENABLED=true`. There is no mock payment mode or fake success button in the app.
+PayPal is disabled by default. A fresh source checkout needs no `.env` file. You can read a listing and save an independent review decision with both Qwen and PayPal offline. The server reads sandbox credentials only when `PAYPAL_SANDBOX_ENABLED=true`.
 
 For suggestions, use Ollama with the exact `qwen3.5:4b-q4_K_M` model. **On a new machine only**, install Ollama from its [official download page](https://ollama.com/download), following the [Windows guide](https://docs.ollama.com/windows) or instructions for your platform. The Windows installer starts a background app; quit your own newly installed Ollama tray app before starting the foreground session below. On the existing development machine, reuse the retained runtime and model without installing or downloading them again. After coordinating exclusive use and confirming no competing service or loaded user model, start your authorized foreground loopback session:
 
@@ -56,7 +56,17 @@ Historical reviews retain their original saved analysis. Their reading view is l
 
 ```powershell
 node --test tests/*.test.mjs
+```
+
+Use a disposable checkout or run the HTTP script from a scratch working directory using its absolute path. Its report writes to `artifacts/http-live.json` relative to the current directory.
+
+```powershell
 node scripts/check-http.mjs
+```
+
+Optional local model and browser checks need the setup described below. Use a fresh output path and disposable application data when rerunning them.
+
+```powershell
 node scripts/check-model.mjs --evidence-version v4 --evaluation exposed-regression --owns-model-use --output artifacts/model-check/new-v4-run.json
 node scripts/browser-check.mjs
 ```
@@ -90,11 +100,11 @@ The optional browser runner uses existing Playwright with `chromiumSandbox:true`
 
 The adapter implements official [standard Checkout](https://developer.paypal.com/api/rest/integration/orders-api/api-use-cases/standard), [Orders v2](https://developer.paypal.com/api/orders/v2/orders-create) and [idempotency guidance](https://developer.paypal.com/api/rest/reference/idempotency). It hardcodes `https://api-m.sandbox.paypal.com`, accepts approval redirects only to `https://www.sandbox.paypal.com`, and uses server create/get/capture. It persists create/capture request IDs before provider calls, checks expected amount/currency/reference and a single final capture, and retains ambiguous outcomes conservatively. The client supplies neither prices nor paid state. No live host is configurable.
 
-Before enabling it on another machine, obtain explicit user authorization to use sandbox merchant credentials and perform sandbox create/capture tests. Supply the sandbox client ID and secret through protected local setup based on [.env.example](.env.example). Credentials must stay out of chat, screenshots, source control and delivery archives. Set `PAYPAL_SANDBOX_ENABLED=true` only after that authorization. Buyer approval remains a separate PayPal sandbox action. In the current continuation, the user authorized setup from the existing Developer sandbox application, confirmed their independent review, and delegated the remaining fictitious-account tests. Protected local `.env` is configured and enabled. During sandbox testing, no accounts were created and no real-money payment was made. Four actual sandbox orders cover two completed $48.00 captures, an uncaptured cancellation and one official provider negative-testing simulation. The simulated decline produced conservative ambiguity rather than a paid receipt; alternate-funding restart was not implemented or verified. The source repository and captioned YouTube demo are public, and [Second Look](https://devpost.com/software/second-look-x5nt6q) has been submitted to the PayPal AI Hackathon.
+Before enabling it, obtain authorization to use the sandbox merchant credentials and perform checkout tests. Supply the sandbox client ID and secret through protected local setup based on [.env.example](.env.example). Keep credentials out of chat, screenshots, source control and delivery archives. Set `PAYPAL_SANDBOX_ENABLED=true` only after authorization. The buyer approves separately in PayPal sandbox. The October 2026 sandbox tests used a private configuration outside the public checkout and archive. The recorded simulation stayed ambiguous and did not produce a paid receipt. Alternate funding after a declined capture remains unverified.
 
 ### Sandbox setup on a fresh judge machine
 
-Use your own free PayPal sandbox application and generated test accounts. Your regular PayPal login is only for access to the [Developer Dashboard](https://developer.paypal.com/dashboard/) in this prototype. The checkout buyer uses a separate, fictitious Sandbox Personal login and simulated funds.
+Use your own PayPal sandbox application and generated test accounts. Use your regular PayPal login to access the [Developer Dashboard](https://developer.paypal.com/dashboard/). Use the separate Sandbox Personal account and simulated funds for the buyer checkout.
 
 1. Sign into the Developer Dashboard and select **Sandbox**. Under **Testing Tools > Sandbox Accounts**, use the generated **Business** account for the merchant and **Personal** account for the buyer. If absent, select **Create Account**, choose the required type and country, and create each test account. PayPal documents the roles and generated accounts in its [sandbox account guide](https://developer.paypal.com/sandbox-testing/accounts).
 2. Under **Apps & Credentials**, keep **Sandbox** selected. Select the default REST app or choose **Create App**, enter a name, select **Merchant** if offered, and associate your Sandbox Business account. Obtain this app's sandbox client ID and secret privately. See [REST API setup](https://developer.paypal.com/api/rest/) and [sandbox app creation steps](https://developer.paypal.com/platforms/disputes/set-up/); no disputes feature or webhook setup is needed by Second Look.
@@ -103,6 +113,8 @@ Use your own free PayPal sandbox application and generated test accounts. Your r
 5. Start or restart `node --env-file-if-exists=.env server.mjs` to load the local configuration and open `http://127.0.0.1:4310`. Complete the listing review and independent acknowledgement, create a sandbox order, and verify the approval page is on `www.sandbox.paypal.com`. Sign in there with the generated **Sandbox Personal** email/password, approve using test funds, return to the app and explicitly request capture. Use only the sandbox buyer at checkout; do not enter a real card or bank account. Inspect the receipt's amount, saved listing/version and separate provider/capture statuses; only a verified completed capture is paid.
 
 ## Structure and limits
+
+To prepare the local source delivery from a clean checkout, use PowerShell 7 and run `pwsh -File scripts/package-delivery.ps1`. The script creates `second-look-source.zip` and prints its checksum and file count. It includes the frozen evidence sources and excludes credentials, SQLite and session state, runtimes, weights, and previous archives.
 
 - `server.mjs`: loopback HTTP, signed HttpOnly session cookie, same-origin CSRF and strict field/body/static-file guards.
 - `lib/catalog.mjs`, `lib/brand.mjs`: six synthetic listings and central name/merchant configuration.
