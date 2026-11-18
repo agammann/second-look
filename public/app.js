@@ -76,7 +76,7 @@ function shell(content) {
   const receiptId = remembered('last-order');
   app.replaceChildren(
     el('div', {className:'environment-bar'}, el('div', {className:'container environment-inner'},
-      el('span', {}, 'Local prototype · synthetic listings'),
+      el('span', {}, 'Local review · fictional listings'),
       el('span', {className:state.config?.paypal.configured ? 'environment-status enabled' : 'environment-status'}, state.config?.paypal.configured ? 'PayPal sandbox configured' : 'PayPal sandbox not configured'))),
     el('header', {className:'site-header'}, el('div', {className:'container header-inner'},
       link([icon('mark'), el('span', {}, brand.name)], {}, {className:'wordmark', 'aria-label':`${brand.name} shop`}),

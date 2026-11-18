@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $taskRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
-$archivePath = Join-Path $taskRoot 'second-look-prototype.zip'
-$nextArchivePath = Join-Path $taskRoot 'second-look-prototype.next.zip'
+$archivePath = Join-Path $taskRoot 'second-look-source.zip'
+$nextArchivePath = Join-Path $taskRoot 'second-look-source.next.zip'
 if ([IO.Path]::GetDirectoryName($archivePath) -ne $taskRoot -or [IO.Path]::GetDirectoryName($nextArchivePath) -ne $taskRoot) { throw 'Archive path outside project'; }
 if (Test-Path -LiteralPath $nextArchivePath) { throw 'Previous staging archive exists; inspect it first'; }
 
